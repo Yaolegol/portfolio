@@ -1,4 +1,5 @@
 const withSass = require("@zeit/next-sass");
+const withImages = require('next-images')
 
 function HACK_removeMinimizeOptionFromCssLoaders(config) {
     console.warn(
@@ -15,9 +16,9 @@ function HACK_removeMinimizeOptionFromCssLoaders(config) {
     });
 }
 
-module.exports = withSass({
+module.exports = withImages(withSass({
     webpack(config) {
         HACK_removeMinimizeOptionFromCssLoaders(config);
         return config;
     },
-});
+}))
