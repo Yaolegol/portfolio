@@ -20,7 +20,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .Main {
   display: grid;
-  grid-template-columns: 3fr 1fr 5fr;  
+  // grid-template-columns: 3fr 1fr 5fr;  
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr) minmax(0, 5fr);  
   grid-column-gap: 5px;
   height: 100%;
 }
