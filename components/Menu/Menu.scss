@@ -1,6 +1,27 @@
 @import '../vars.scss';
 
 .Menu {
-  height: 50%;
-  background-color: $main-background;
+  height: 30%;  
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-row-gap: 5px;
+
+  .Item {    
+    background-color: $main-background;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: rgb(189, 189, 189);
+      cursor: pointer;
+      color: #fff;
+      img {
+        display: none;
+      }
+      font-size: 20px;
+    }
+  }
 }
