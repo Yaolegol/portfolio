@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
 import HeadHOC from '../components/hoc/head/head'
-import Main from '../components/main'
+import Main from '../components/Main'
 
 const Home = () => (
   <Fragment>
