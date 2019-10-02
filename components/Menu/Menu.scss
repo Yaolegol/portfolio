@@ -15,7 +15,7 @@
     align-items: center;
 
     &:hover {
-      background-color: rgb(189, 189, 189);
+      background-color: $menu_hover;
       cursor: pointer;
       color: #fff;
       img {

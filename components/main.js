@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import About from '../components/About/About'
 import Menu from '../components/Menu/Menu'
+import AboutMe from '../components/AboutMe/AboutMe'
 import Projects from '../components/Projects/Projects'
 import './main.scss'
 
@@ -27,7 +28,7 @@ class Main extends Component {
         {
         this.state.page === 'projects'
         ? <Projects />
-        : null
+        : <AboutMe />
         }
       </div>
     )
