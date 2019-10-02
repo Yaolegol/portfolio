@@ -5,7 +5,7 @@
   background-color: $main-background;
 
   .Projects-CarouselWrap {
-    height: 400px;
+    height: 600px;
   }
 
   .carousel,
@@ -14,7 +14,7 @@
     height: 100%;
   }
 
-  a,
+  .Projects-CarouselWrap a,
   img {
     height: 100%;
   }
@@ -29,23 +29,74 @@
     background-color: black;
   }
 
-  .carousel-control-next,
-  .carousel-control-prev {    
-    filter: invert(100%);
+  .carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(/static/left_arrow.png);
   }
 
-  a, h3 {
+  .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(/static/right_arrow.png);
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: 25%;
+    top: initial;
+  }
+
+  .Description {
+    position: relative;
+  }
+
+  .RightArrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    margin-right: 10px;
+  }
+
+  .LeftArrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    margin-left: 10px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+  }  
+
+  .sr-only {
+    background-image: url();
+  }
+
+  a,
+  h3 {
     color: black;
-    text-decoration: none;    
+    text-decoration: none;
   }
   h6 {
     font-style: italic;
     margin-bottom: 20px;
   }
 
-  .GitHubImg {
-    margin-top: 50px;
-    height: initial;
+  h5 {
+    margin-top: 20px;
   }
-  
+
+  .GitHubImg {
+    margin: 50px 0;
+
+    & img {
+      height: initial;
+    }
+  }
 }
