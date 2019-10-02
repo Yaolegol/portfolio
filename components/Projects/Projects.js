@@ -4,10 +4,10 @@ import Carousel from 'react-bootstrap/Carousel'
 import './Projects.scss'
 import TakeoffImg from './img/Takeoff_img.jpg'
 import VeltryImg from './img/Veltry_img.jpg'
+import PortfolioImg from './img/kotiki.jpg'
 import GithubImg from './img/Github_icon.png'
 import LeftArrowImg from '../../static/left_arrow.png'
 import RightArrowImg from '../../static/right_arrow.png'
-import { ENETUNREACH } from 'constants'
 
 const defaultProps = {
   interval: null,
@@ -29,7 +29,7 @@ class Projects extends Component {
     let childrens = list.children;
 
     for (let i = 0; i < childrens.length; i++) {
-      childrens[i].addEventListener('click', e => {       
+      childrens[i].addEventListener('click', e => {
         this.toggleCarousel(null, i);
       });
     };
@@ -38,20 +38,11 @@ class Projects extends Component {
 
   toggleCarousel = (direction, i = null) => {
 
-    if (i >= 0) {      
+    if (i >= 0) {
       this.setState({
         index: i
       });
     }
-
-
-    // if(i === this.state.index) {
-    //   return;
-    // } else if (i > this.state.index) {
-    //   direction = 'next'
-    // } else {
-    //   direction = 'prev'
-    // }
 
     let index = this.state.index
     const [min, max] = [0, this.state.carouselItemCount - 1]
@@ -91,7 +82,7 @@ class Projects extends Component {
                 <img
                   className="d-block w-100"
                   src={TakeoffImg}
-                  alt="First slide"
+                  alt="takeoff"
                 />
               </a>
             </div>
@@ -146,7 +137,7 @@ class Projects extends Component {
                 <img
                   className="d-block w-100"
                   src={VeltryImg}
-                  alt="Third slide"
+                  alt="veltry"
                 />
               </a>
             </div>
@@ -220,12 +211,57 @@ class Projects extends Component {
           </Carousel.Item>
           <Carousel.Item>
             <div className='Projects-CarouselWrap'>
-              <img
-                className="d-block w-100"
-                src={VeltryImg}
-                alt="Third slide"
-              />
+              <a href="/">
+                <img
+                  className="d-block w-100"
+                  src={PortfolioImg}
+                  alt="portfolio"
+                />
+              </a>
             </div>
+            <Carousel.Caption>
+              <div className='Description'>
+                <a href="/">
+                  <h3>Portfolio</h3>
+                  <h6>(текущий сайт)</h6>
+                </a>
+                <h5>Особенности проекта</h5>
+                <p>- выполнен с использованием next.js</p>
+                <p>- адаптивная верстка</p>
+                <p>- верстка выполнена по БЭМ</p>
+                <p>- карусель - react-bootstrap с добавлением скрипта на кнопки влево-вправо и пагинацию</p>              
+                
+                <div className='GitHubImg'>
+                  <a href="https://github.com/Yaolegol/portfolio" target='_blank'>
+                    <img
+                      src={GithubImg}
+                      alt="GitHub"
+                    />
+                    <p>Посмотреть код</p>
+                  </a>
+                </div>
+
+                <div className='LeftArrow'>
+                  <button type='button' onClick={() => this.toggleCarousel('prev')}>
+                    <img
+                      src={LeftArrowImg}
+                      alt="LeftArrow"
+                    />
+                  </button>
+                </div>
+
+                <div className='RightArrow'>
+                  <button type='button' onClick={() => this.toggleCarousel('next')}>
+                    <img
+                      src={RightArrowImg}
+                      alt="RightArrow"
+                    />
+                  </button>
+                </div>
+              </div>
+
+            </Carousel.Caption>
+
           </Carousel.Item>
         </Carousel>
 
