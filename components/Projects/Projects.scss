@@ -4,7 +4,22 @@
   height: 100%;  
   background-color: $main-background;
 
-  
+  .Projects-CarouselWrap {
+    height: 600px;
+  }
+
+  .carousel, .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+
+  a, img {
+    height: 70%;
+  }
+
+  .carousel-caption {
+    position: initial;
+    color: black;
+  }
 
   
 }
