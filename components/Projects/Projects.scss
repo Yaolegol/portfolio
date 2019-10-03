@@ -6,19 +6,27 @@
 
   .Projects-CarouselWrap {
     height: 600px;
+
+    @media screen and (max-width: 700px) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+      height: 300px;
+    }
   }
 
   .carousel,
   .carousel-inner,
   .carousel-item {
-    height: 100%;    
+    height: 100%;
   }
 
   ol {
     margin: 0;
   }
 
-  .carousel {    
+  .carousel {
     margin-bottom: 50px;
   }
 
@@ -57,7 +65,7 @@
 
   .Description {
     position: relative;
-    padding-top: 50px;    
+    padding-top: 50px;
   }
 
   .carousel-caption {
@@ -86,7 +94,15 @@
     border: none;
     padding: 0;
     border-radius: 50%;
-  }  
+
+    @media screen and (max-width: 700px) {
+      opacity: 0.4;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
 
   .sr-only {
     background-image: url();
