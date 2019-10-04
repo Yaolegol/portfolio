@@ -11,7 +11,6 @@
   a {
     text-decoration: none;
     color: initial;
-    cursor: initial;
   }
 
   .UserFoto {
@@ -37,8 +36,8 @@
     p, img {
       margin: 10px 0;
     }
-    &>a:last-child {      
-      cursor: pointer;
+    &>p:first-child a {      
+      cursor: initial;
     }
   }
 

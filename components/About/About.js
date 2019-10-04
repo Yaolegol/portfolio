@@ -17,8 +17,8 @@ const About = () => (
     </div>
 
     <div className='MediaLinks'>
-      <p><b>Сот.телефон: <a href="tel:+79069473139">+79069473139</a></b></p>
-      <p><b>Email: m160160@yandex.ru</b></p>
+      <p><b><a href="tel:+79069473139">Сот.телефон: +79069473139</a></b></p>
+      <p><b><a href="mailto:m160160@yandex.ru">Email: m160160@yandex.ru</a></b></p>
       <a href='https://vk.com/id41167330' target="_blank" rel="noopener noreferrer">
         <img src={VKImg} alt="VK" />
       </a>
