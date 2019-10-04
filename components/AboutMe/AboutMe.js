@@ -22,7 +22,7 @@ const AboutMe = () => (
         </tr>
         <tr>
           <th scope="row">Работа</th>
-          <td>Работал помощником арбитражного управляющего с 2012 года</td>
+          <td>Работал юрисконсультом с 2012 года</td>
         </tr>
         <tr>
           <th scope="row">Интересы</th>
@@ -31,10 +31,6 @@ const AboutMe = () => (
         <tr>
           <th scope="row">Что изучил?</th>
           <td>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react.js, react-router, redux, redux-promise, redux-thunk, next.js, axios.js, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, основы тестирования web приложений, jest, mocha, node.js, express.js, multer, JWT, mongodb, mongoose, sql, php, c#, ооп</td>
-        </tr>        
-        <tr>
-          <th scope="row">Владение английским языком</th>
-          <td>Понимаю речь и тексты без труда, могу говорить и писать</td>
         </tr>
       </tbody>
     </table>

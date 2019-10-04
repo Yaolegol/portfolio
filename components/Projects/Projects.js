@@ -190,7 +190,7 @@ class Projects extends Component {
               <p>- выполнен с использованием next.js</p>
               <p>- адаптивная верстка</p>
               <p>- верстка выполнена по БЭМ</p>
-              <p>- карусель - react-bootstrap с добавлением скрипта на кнопки влево-вправо и пагинацию</p>
+              <p>- карусель - react-swipe</p>
 
               <div className='GitHubImg'>
                 <a href="https://github.com/Yaolegol/portfolio" target='_blank'>
