@@ -4,7 +4,7 @@ import './Menu.scss'
 import ProjectsImg from './img/ProjectsImg.png'
 import AboutImg from './img/AboutImg.png'
 
-const Menu = (props) => (
+const Menu = props => (
   <div className='Menu'>
     <div className='Item' onClick={() => props.onClick('about')}>
       <img src={AboutImg} alt="About Img" />

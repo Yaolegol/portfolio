@@ -1,12 +1,12 @@
-@import '../vars.scss';
+@import "../vars.scss";
 
 .Menu {
-  height: 30%;  
+  height: 30%;
   display: grid;
   grid-template-rows: 150px 150px;
   grid-row-gap: 5px;
 
-  .Item {    
+  .Item {
     background-color: $main-background;
     border-radius: 5px;
     display: flex;
