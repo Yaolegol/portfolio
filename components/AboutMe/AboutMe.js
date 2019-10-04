@@ -26,7 +26,7 @@ const AboutMe = () => (
         </tr>
         <tr>
           <th scope="row">Интересы</th>
-          <td>Frontend (преимущественно), backend, mobile development. Программированием увлекаюсь более 2-х лет, frontend разработкой занимаюсь более года</td>
+          <td>Frontend (преимущественно), backend, mobile development</td>
         </tr>
         <tr>
           <th scope="row">Что изучил?</th>
