@@ -9,13 +9,15 @@ import './main.scss'
 class Main extends Component {
 
   state = {
-    page: 'projects'
+    page: 'projects',
+    activePage: 1
   }
 
   clickHandler = (page) => {
     if (page !== this.state.page) {
       this.setState({
-        page
+        page,
+        activePage: this.state.activePage === 0 ? 1 : 0
       });
     }
   }
@@ -24,7 +26,7 @@ class Main extends Component {
     return (
       <div className='Main' >
         <About />
-        <Menu onClick={this.clickHandler} />
+        <Menu onClick={this.clickHandler} activePage={this.state.activePage} />
         {
         this.state.page === 'projects'
         ? <Projects />

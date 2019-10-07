@@ -13,7 +13,7 @@ const About = () => (
     <div className='About-Text'>
       <h1>Олег Олейник</h1>
       <p>Frontend developer</p>
-      <p className='About-MainText'>Всем привет! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure minus magni est dolores maiores molestiae veritatis quam temporibus error?</p>
+      <p className='About-MainText'>Всем привет! Данный сайт представляет собой сборник моих работ, а также немного рассказывает обо мне. Приятного просмотра :)</p>
     </div>
 
     <div className='MediaLinks'>

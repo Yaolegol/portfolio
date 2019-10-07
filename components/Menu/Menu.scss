@@ -4,7 +4,7 @@
   height: 30%;
   display: grid;
   grid-template-rows: 150px 150px;
-  grid-row-gap: 5px;
+  grid-row-gap: 5px;  
 
   .Item {
     background-color: $main-background;
@@ -13,9 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #fff;
 
     &:hover {
-      background-color: $menu_hover;
+      background-color: $menu_hover;   
+      border-radius: 5px!important;        
       cursor: pointer;
       color: #fff;
       img {

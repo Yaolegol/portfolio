@@ -22,7 +22,7 @@ const AboutMe = () => (
         </tr>
         <tr>
           <th scope="row">Работа</th>
-          <td>Работал юрисконсультом с 2012 года</td>
+          <td>Юрисконсульт (с 2012 по 2019 годы)</td>
         </tr>
         <tr>
           <th scope="row">Интересы</th>
@@ -30,7 +30,7 @@ const AboutMe = () => (
         </tr>
         <tr>
           <th scope="row">Что изучил?</th>
-          <td>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react.js, react-router, redux, redux-promise, redux-thunk, next.js, axios.js, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, основы тестирования web приложений, jest, mocha, node.js, express.js, multer, JWT, mongodb, mongoose, sql, php, c#, ооп</td>
+          <td>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react, react-router, redux, redux-promise, redux-thunk, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, jest, mocha, node, express, multer, JWT, mongodb, mongoose, sql, php, c#, ооп</td>
         </tr>
       </tbody>
     </table>

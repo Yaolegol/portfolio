@@ -55,8 +55,7 @@ class Projects extends Component {
               </a>
               <h5>Особенности проекта</h5>
               <p>- выполнен на чистых HTML, CSS + немного jQuery</p>
-              <p>- адаптивная верстка</p>
-              <p>- верстка выполнена по БЭМ</p>
+              <p>- адаптивная верстка</p>              
               <p>- карусель - Owl Carousel 2 с добавлением скрипта на кнопки влево-вправо</p>
               <p>- навигация с использованием якорей</p>
               <p>- backend на node.js (работает кнопка "contact" в правом верхнем углу)</p>
@@ -116,8 +115,7 @@ class Projects extends Component {
 
               <h5>Client</h5>
               <p>- выполнен с использованием react, react-router, redux, redux-promise, redux-thunk, axios, scss, material-ui, fontawesome</p>
-              <p>- адаптивная верстка</p>
-              <p>- верстка выполнена по БЭМ</p>
+              <p>- адаптивная верстка</p>              
               <p>- карусель - react-slick</p>
               <p>- пагинация страниц с товарами</p>
 
@@ -188,8 +186,7 @@ class Projects extends Component {
               </a>
               <h5>Особенности проекта</h5>
               <p>- выполнен с использованием next.js</p>
-              <p>- адаптивная верстка</p>
-              <p>- верстка выполнена по БЭМ</p>
+              <p>- адаптивная верстка</p>              
               <p>- карусель - react-swipe</p>
 
               <div className='GitHubImg'>
