@@ -1,10 +1,11 @@
 @import "../vars.scss";
 
 .Projects {
-  background-color: $main-background;
+  background-color: $main-background;  
 
   .Projects-CarouselWrap {
     height: 600px;
+    margin: 0 10px;
 
     & img {
       height: 100%;
