@@ -18,8 +18,8 @@ class Projects extends Component {
     return (
       <div className='Projects'>
         <ReactSwipe swipeOptions={{ speed: 500 }} ref={el => this.reactSwipeEl = el}>
-          <div>
-            <div className='Projects-CarouselWrap'>
+          <div className='CarouselItem'>
+            <div className='CarouselItem-ImgWrap'>
               <a href="http://takeoff-rename.herokuapp.com/" target='_blank'>
                 <img
                   className="d-block w-100"
@@ -71,8 +71,8 @@ class Projects extends Component {
             </div>
           </div>
 
-          <div>
-            <div className='Projects-CarouselWrap'>
+          <div className='CarouselItem'>
+            <div className='CarouselItem-ImgWrap'>
               <a href="https://veltry.herokuapp.com/" target='_blank'>
                 <img
                   className="d-block w-100"
@@ -148,8 +148,8 @@ class Projects extends Component {
             </div>
           </div>
 
-          <div>
-            <div className='Projects-CarouselWrap'>
+          <div className='CarouselItem'>
+            <div className='CarouselItem-ImgWrap'>
               <a href="/">
                 <img
                   className="d-block w-100"

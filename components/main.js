@@ -5,11 +5,12 @@ import Menu from '../components/Menu/Menu'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Projects from '../components/Projects/Projects'
 import './main.scss'
+import { setTimeout } from 'timers'
 
 class Main extends Component {
 
   state = {
-    page: 'projects',
+    page: '',
     activePage: 1
   }
 
@@ -22,15 +23,32 @@ class Main extends Component {
     }
   }
 
+  componentDidMount = () => {   
+
+    //этот костыль нужен для корректного отображения карусели react-slider в grid layout,
+    //иначе на dev сервере все работает ок, но после выкладки на хостинг - карусель неверно рассчитывает
+    //общую width карусели и каждого элемента
+    setTimeout(() => {
+      if (this.state.page === '') {        
+        this.setState({
+          page: 'projects'
+        });
+      }
+    }, 100);
+  }
+
   render() {
     return (
       <div className='Main' >
         <About />
         <Menu onClick={this.clickHandler} activePage={this.state.activePage} />
         {
-        this.state.page === 'projects'
-        ? <Projects />
-        : <AboutMe />
+          this.state.page === 'projects'
+            ? <Projects />
+            :
+            this.state.page === ''
+              ? null
+              : <AboutMe />              
         }
       </div>
     )

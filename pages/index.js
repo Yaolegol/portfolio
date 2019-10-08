@@ -6,9 +6,7 @@ import Main from '../components/Main'
 const Home = () => (
   <Fragment>
     <HeadHOC />
-
     <Main />
-
   </Fragment>
 )
 
