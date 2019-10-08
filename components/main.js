@@ -5,7 +5,6 @@ import Menu from '../components/Menu/Menu'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Projects from '../components/Projects/Projects'
 import './main.scss'
-import { setTimeout } from 'timers'
 
 class Main extends Component {
 
