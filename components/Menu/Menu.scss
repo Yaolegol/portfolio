@@ -21,6 +21,10 @@
     border-bottom: 2px solid #fff;
     min-width: 180px;
 
+    @media screen and (min-width: 1450px) and (max-width: 1750px) {
+      min-width: 150px;
+    }
+
     &:hover {
       background-color: $menu_hover;   
       border-radius: 5px!important;        
