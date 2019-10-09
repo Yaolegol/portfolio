@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './About.scss'
-import UserFotoImg from './img/3.png';
+import UserFotoImg from './img/fotofoto.jpg';
 import VKImg from './img/vk.png';
 
 const About = () => (
