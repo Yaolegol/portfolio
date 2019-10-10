@@ -30,7 +30,7 @@ const AboutMe = () => (
         </tr>
         <tr>
           <th scope="row">Что изучил?</th>
-          <td>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react, react-router, redux, redux-promise, redux-thunk, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, jest, mocha, node, express, multer, JWT, mongodb, mongoose, sql, php, c#, ооп</td>
+          <td>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react, react-router, redux, redux-promise, redux-thunk, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, jest, mocha, node, express, multer, JWT, mongodb, mongoose, sql, php, c#, ооп, REST API, GraphQL</td>
         </tr>
       </tbody>
     </table>
