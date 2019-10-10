@@ -9,7 +9,7 @@ import './main.scss'
 class Main extends Component {
 
   state = {
-    page: '',
+    page: 'projects',
     activePage: 1
   }
 
@@ -20,21 +20,7 @@ class Main extends Component {
         activePage: this.state.activePage === 0 ? 1 : 0
       });
     }
-  }
-
-  componentDidMount = () => {   
-
-    //этот костыль нужен для корректного отображения карусели react-slider в grid layout,
-    //иначе на dev сервере все работает ок, но после выкладки на хостинг - карусель неверно рассчитывает
-    //общую width карусели и каждого элемента
-    setTimeout(() => {
-      if (this.state.page === '') {        
-        this.setState({
-          page: 'projects'
-        });
-      }
-    }, 100);
-  }
+  }  
 
   render() {
     return (
