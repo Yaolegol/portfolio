@@ -27,8 +27,7 @@ const AboutMe = () => (
 
           <div className='AboutMe__Info__TitleAria'>Что изучил?</div>
           <div className='AboutMe__Info__DescriptionAria'>HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery,
-              react, react-router, redux, redux-promise,
-              redux-divunk, reselect, classnames, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars,
+              react, react-router, redux, redux-promise, redux-thunk, reselect, classnames, Flow, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars,
               webpack, gulp, material-ui, bootstrap, git, jira, jest, mocha, node, express, multer, JWT, mongodb,
               mongoose, sql, php, c#, ООП, REST API, GraphQL, React Native, Flutter, docker, Angular, Vue, Figma,
               Ubuntu, MacOS, Visual Studio, VSCode, PHPStorm
@@ -36,8 +35,7 @@ const AboutMe = () => (
 
           <div className='AboutMe__Info__TitleAria'>Технологии, которые использовал в production:</div>
           <div className='AboutMe__Info__DescriptionAria'>HTML, CSS, less, адаптивная верстка, js, react, react-router,
-              redux, redux-divunk, reselect,
-              classnames, fetch, promise, async-await, webpack, git, REST API, React Native, Flutter, docker, Figma,
+              redux, redux-thunk, reselect, classnames, Flow, fetch, promise, async-await, webpack, git, REST API, React Native, Flutter, docker, Figma,
               Ubuntu, MacOS, PHPStorm
           </div>
 
