@@ -6,7 +6,6 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "express": "^4.17.1",
-    "next": "^10.0.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-intl": "^5.10.6",
