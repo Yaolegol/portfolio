@@ -1,0 +1,30 @@
+@import (reference) '~styles/colors';
+
+.custom-select {
+    display: flex;
+    flex: 1;
+
+    .select {
+        display: flex;
+        flex: 1;
+
+        &__control {
+            cursor: pointer;
+            display: flex;
+            flex: 1;
+
+            &:hover {
+                border-color: @blue-1;
+            }
+
+            &--is-focused {
+                border-color: @gray-1;
+                box-shadow: none;
+            }
+        }
+
+        &__option {
+            cursor: pointer;
+        }
+    }
+}

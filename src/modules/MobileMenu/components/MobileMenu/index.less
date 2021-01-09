@@ -1,0 +1,36 @@
+@import (reference) '~styles/colors';
+
+.mobile-menu {
+    background-color: fade(@black, 80%);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+
+    &_show {
+        display: flex;
+    }
+
+    &__body {
+        align-items: center;
+        background-color: @black;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        padding: 50px 20px;
+        width: 70vw;
+    }
+
+    &__lang-select {
+        margin-top: 50px;
+        min-width: 80px;
+    }
+
+    &__menu {
+        align-items: center;
+        flex-direction: column;
+    }
+}

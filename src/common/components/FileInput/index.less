@@ -1,0 +1,44 @@
+@import (reference) '~styles/colors';
+@import (reference) '~styles/font';
+
+.file-input {
+    text-align: left;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        background-color: @white;
+        border: 1px solid @blue-2;
+        border-radius: 5px;
+        color: @blue-2;
+        cursor: pointer;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    &__preview-card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    &__preview-description {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    &__preview-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    &__preview-img {
+        height: 200px;
+        object-fit: cover;
+        width: 200px;
+    }
+}

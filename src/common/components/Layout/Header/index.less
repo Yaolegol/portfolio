@@ -1,0 +1,47 @@
+@import (reference) '~styles/adaptive';
+@import (reference) '~styles/colors';
+
+.header {
+    align-items: center;
+    background-color: @black;
+    display: flex;
+    justify-content: space-around;
+    height: 84px;
+    left: 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    @media @laptop {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    @media @mobile {
+        height: 48px;
+    }
+
+    &__burger-button {
+        display: none;
+
+        @media @laptop {
+            display: flex;
+        }
+    }
+
+    &__item {
+        &_laptop-hidden {
+            @media @laptop {
+                display: none !important;
+            }
+        }
+    }
+
+    &__lang-select {
+        display: flex;
+        min-width: 80px;
+    }
+}

@@ -1,0 +1,43 @@
+@import (reference) '~styles/colors';
+@import (reference) '~styles/font';
+
+.button {
+    .f_p();
+
+    background-color: @blue;
+    color: @white;
+    cursor: pointer;
+    padding: 10px 40px;
+    text-transform: uppercase;
+
+    &:hover:not(:disabled) {
+        background-color: @blue-1;
+        color: fade(@white, 80%);
+    }
+
+    &:disabled {
+        background-color: fade(@gray-1, 45%);
+        border-color: fade(@gray-1, 45%);
+        color: @white;
+        cursor: initial;
+    }
+
+    &_full-width {
+        width: 100%;
+    }
+
+    &_white {
+        background-color: @white;
+        border: 1px solid @blue-2;
+        color: @blue-2;;
+
+        &:hover:not(:disabled) {
+            background-color: @blue-2;
+        }
+
+        &:disabled {
+            background-color: fade(@gray-1, 45%);
+            border-color: fade(@gray-1, 45%);
+        }
+    }
+}
