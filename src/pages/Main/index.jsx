@@ -6,7 +6,9 @@ import "./index.less";
 const MainPage = (): React$Node => {
     return (
         <Layout>
-            <div className="main-page">test</div>
+            <div className="main-page">
+                test
+            </div>
         </Layout>
     );
 };

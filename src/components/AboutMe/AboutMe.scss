@@ -1,0 +1,28 @@
+@import "../vars.scss";
+
+.AboutMe {
+    height: 100%;
+    background-color: $main-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 50px;
+
+    &__Info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+        margin-top: 25px;
+
+        &__TitleAria {
+            font-weight: bold;
+            justify-self: end;
+        }
+
+        &__DescriptionAria {
+            justify-self: start;
+        }
+
+    }
+}
