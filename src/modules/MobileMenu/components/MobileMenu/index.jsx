@@ -1,6 +1,5 @@
 // @flow
 import cn from "classnames";
-import { Menu } from "common/components/Menu";
 import { LangSelect } from "modules/Locale/components/LangSelect";
 import { actionHideMobileMenu } from "modules/MobileMenu/actions";
 import { selectMobileMenuShowStatus } from "modules/MobileMenu/selectors";
@@ -28,7 +27,6 @@ const MobileMenu = ({ dispatch, isShow }: TProps): React$Node => {
             onClick={toggleMobileMenu}
         >
             <div className="mobile-menu__body" onClick={preventClick}>
-                <Menu className="mobile-menu__menu" />
                 <div className="mobile-menu__lang-select">
                     <LangSelect />
                 </div>
