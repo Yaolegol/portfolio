@@ -1,12 +1,12 @@
 // @flow
-import { SliderMainSlide } from "common/components/Slider/SliderMain/SliderMainSlide";
+import { SliderMainSlide } from "pages/Main/components/Content/Projects/ProjectsSlider/SliderMainSlide";
 import ArrowIcon from "images/arrow-right.svg";
 import { Slider } from "common/components/Slider";
 import React, { useState, useCallback } from "react";
 import { useIntl } from "react-intl";
 import "./index.less";
 
-export const SliderMain = (): React$Node => {
+export const ProjectsSlider = (): React$Node => {
     const [swiper, setSwiper] = useState();
 
     const intl = useIntl();
@@ -24,7 +24,7 @@ export const SliderMain = (): React$Node => {
     }, [swiper]);
 
     return (
-        <div className="slider-main">
+        <div className="project-slider">
             <Slider onSwiper={setSwiper}>
                 <SliderMainSlide
                     buttonText={intl.formatMessage({
@@ -69,18 +69,18 @@ export const SliderMain = (): React$Node => {
                     })}
                 />
             </Slider>
-            <div className="slider-main__controls">
+            <div className="project-slider__controls">
                 <button
-                    className="slider-main__control-button"
+                    className="project-slider__control-button"
                     onClick={slidePrev}
                 >
-                    <ArrowIcon className="slider-main__control-icon slider-main__control-icon_left" />
+                    <ArrowIcon className="project-slider__control-icon project-slider__control-icon_left" />
                 </button>
                 <button
-                    className="slider-main__control-button"
+                    className="project-slider__control-button"
                     onClick={slideNext}
                 >
-                    <ArrowIcon className="slider-main__control-icon" />
+                    <ArrowIcon className="project-slider__control-icon" />
                 </button>
             </div>
         </div>

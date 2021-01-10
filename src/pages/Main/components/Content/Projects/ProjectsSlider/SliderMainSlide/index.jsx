@@ -19,20 +19,20 @@ export const SliderMainSlide = ({
     title,
 }: TProps): React$Node => {
     return (
-        <div className="slider-main-slide">
-            <div className="slider-main-slide__image-section">
+        <div className="project-slider-slide">
+            <div className="project-slider-slide__image-section">
                 <img
-                    className="slider-main-slide__image"
+                    className="project-slider-slide__image"
                     src={imgSrc}
                     alt={imgAlt}
                 />
             </div>
-            <div className="slider-main-slide__content-section">
-                <div className="slider-main-slide__content">
-                    <h1 className="slider-main-slide__content-header">
+            <div className="project-slider-slide__content-section">
+                <div className="project-slider-slide__content">
+                    <h1 className="project-slider-slide__content-header">
                         {title}
                     </h1>
-                    <p className="slider-main-slide__content-description">
+                    <p className="project-slider-slide__content-description">
                         {description}
                     </p>
                 </div>
