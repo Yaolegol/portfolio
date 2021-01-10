@@ -10,6 +10,7 @@ type TProps = {
     git: string,
     imgAlt: string,
     imgSrc: string,
+    link: string,
     title: string,
 };
 
@@ -20,6 +21,7 @@ export const Slide = ({
     git,
     imgAlt,
     imgSrc,
+    link,
     title,
 }: TProps): React$Node => {
     const _features = useMemo(() => {
@@ -48,6 +50,12 @@ export const Slide = ({
 
     return (
         <div className="project-slider-slide">
+            <a
+                className="project-slider-slide__link"
+                href={link}
+                rel="nofollow noreferrer"
+                target="_blank"
+            />
             <img
                 alt={imgAlt}
                 className="project-slider-slide__image"

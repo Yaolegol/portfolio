@@ -17,7 +17,8 @@
         "image": {
             "alt": "Concrete",
             "src": "images/concrete.png"
-        }
+        },
+        "link": "https://veltry.herokuapp.com/"
     },
     {
         "features": [
@@ -28,15 +29,16 @@
                 "title": "test title"
             }
         ],
-        "git": "https://github.com/Yaolegol/Concrete",
+        "git": "https://github.com/Yaolegol/TAKEOFF",
         "header": {
-            "description": "(online store)",
-            "title": "concrete"
+            "description": "landing page",
+            "title": "takeoff"
         },
         "image": {
-            "alt": "Concrete",
-            "src": "images/concrete.png"
-        }
+            "alt": "Takeoff",
+            "src": "images/takeoff.png"
+        },
+        "link": "https://takeoff-rename.herokuapp.com/"
     },
     {
         "features": [
@@ -47,14 +49,15 @@
                 "title": "test title"
             }
         ],
-        "git": "https://github.com/Yaolegol/Concrete",
+        "git": "https://github.com/Yaolegol/portfolio",
         "header": {
-            "description": "(online store)",
-            "title": "concrete"
+            "description": "текущий сайт",
+            "title": "portfolio"
         },
         "image": {
-            "alt": "Concrete",
-            "src": "images/concrete.png"
-        }
+            "alt": "Cats",
+            "src": "images/cats.jpg"
+        },
+        "link": "#"
     }
 ]
