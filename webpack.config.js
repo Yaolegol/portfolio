@@ -9,6 +9,7 @@ module.exports = {
         historyApiFallback: true,
         hot: true,
         inline: true,
+        port: 8080,
     },
     devtool: "source-map",
     entry: "./src/index.jsx",

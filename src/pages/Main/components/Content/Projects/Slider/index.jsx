@@ -34,7 +34,7 @@ export const Slider = (): React$Node => {
                         id: "hero.slide.description",
                     })}
                     imgAlt="Hero"
-                    imgSrc="images/main/header/hero.jpg"
+                    imgSrc="images/concrete.png"
                     onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
@@ -48,7 +48,7 @@ export const Slider = (): React$Node => {
                         id: "hero.slide.description",
                     })}
                     imgAlt="Hero"
-                    imgSrc="images/main/header/hero.jpg"
+                    imgSrc="images/takeoff.png"
                     onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
@@ -62,7 +62,7 @@ export const Slider = (): React$Node => {
                         id: "hero.slide.description",
                     })}
                     imgAlt="Hero"
-                    imgSrc="images/main/header/hero.jpg"
+                    imgSrc="images/cats.jpg"
                     onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
