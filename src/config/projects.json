@@ -31,7 +31,7 @@
         ],
         "git": "https://github.com/Yaolegol/TAKEOFF",
         "header": {
-            "description": "landing page",
+            "description": "(landing page)",
             "title": "takeoff"
         },
         "image": {
@@ -51,7 +51,7 @@
         ],
         "git": "https://github.com/Yaolegol/portfolio",
         "header": {
-            "description": "текущий сайт",
+            "description": "(текущий сайт)",
             "title": "portfolio"
         },
         "image": {
