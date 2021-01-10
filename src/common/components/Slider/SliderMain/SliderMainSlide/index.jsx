@@ -1,5 +1,4 @@
 // @flow
-import { ShopNowButton } from "common/components/Button/ShopNowButton";
 import React from "react";
 import "./index.less";
 
@@ -36,9 +35,6 @@ export const SliderMainSlide = ({
                     <p className="slider-main-slide__content-description">
                         {description}
                     </p>
-                    <div className="slider-main-slide__button-container">
-                        <ShopNowButton onClick={onClick} />
-                    </div>
                 </div>
             </div>
         </div>

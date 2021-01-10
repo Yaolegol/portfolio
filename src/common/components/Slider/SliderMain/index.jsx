@@ -6,7 +6,7 @@ import React, { useState, useCallback } from "react";
 import { useIntl } from "react-intl";
 import "./index.less";
 
-export const SliderMain = () => {
+export const SliderMain = (): React$Node => {
     const [swiper, setSwiper] = useState();
 
     const intl = useIntl();
