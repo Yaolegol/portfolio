@@ -1,7 +1,72 @@
 // @flow
-import React from "react";
+import cn from "classnames";
+import { About } from "pages/Main/components/Content/About";
+import { Projects } from "pages/Main/components/Content/Projects";
+import React, { useCallback, useMemo, useState } from "react";
 import "./index.less";
 
 export const Content = (): React$Node => {
-    return <div className="main-page-content">content</div>;
+    const [contentId, setContentId] = useState("about");
+
+    const changeContent = useCallback(
+        (id) => () => {
+            setContentId(id);
+        },
+        []
+    );
+
+    const content = useMemo(() => {
+        switch (contentId) {
+            case "about":
+                return <About />;
+            case "projects":
+                return <Projects />;
+            default:
+                return <About />;
+        }
+    }, [contentId]);
+
+    return (
+        <div className="main-page-content">
+            <div className="main-page-content__tabs-container">
+                <button
+                    className={cn("main-page-content__tabs-button", {
+                        "main-page-content__tabs-button_active":
+                            contentId === "about",
+                    })}
+                    onClick={changeContent("about")}
+                >
+                    <div className="main-page-content__tab">
+                        <img
+                            alt="About me"
+                            className="main-page-content__tab-icon"
+                            src="images/people.png"
+                        />
+                        <div className="main-page-content__tab-description">
+                            Обо мне
+                        </div>
+                    </div>
+                </button>
+                <button
+                    className={cn("main-page-content__tabs-button", {
+                        "main-page-content__tabs-button_active":
+                            contentId === "projects",
+                    })}
+                    onClick={changeContent("projects")}
+                >
+                    <div className="main-page-content__tab">
+                        <img
+                            alt="My projects"
+                            className="main-page-content__tab-icon"
+                            src="images/projects.png"
+                        />
+                        <div className="main-page-content__tab-description">
+                            Мои проекты
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div className="main-page-content__content-section">{content}</div>
+        </div>
+    );
 };

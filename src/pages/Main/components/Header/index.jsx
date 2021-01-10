@@ -2,31 +2,31 @@
 import React from "react";
 import "./index.less";
 
-export const About = (): React$Node => {
+export const Header = (): React$Node => {
     return (
-        <div className="main-page-about">
+        <div className="main-page-header">
             <img
                 alt="Avatar"
-                className="main-page-about__photo"
+                className="main-page-header__photo"
                 src="images/avatar.jpg"
             />
-            <div className="main-page-about__header-section">
+            <div className="main-page-header__header-section">
                 <h1>Олег Олейник</h1>
-                <div className="main-page-about__header-description">
+                <div className="main-page-header__header-description">
                     Frontend developer
                 </div>
             </div>
-            <div className="main-page-about__description-section">
+            <div className="main-page-header__description-section">
                 На этом сайте Вы можете посмотреть мои проекты, а также основную
                 информацию обо мне как о frontend разработчике
             </div>
-            <div className="main-page-about__contacts-section">
-                <div className="main-page-about__contacts-item">
+            <div className="main-page-header__contacts-section">
+                <div className="main-page-header__contacts-item">
                     <b>
                         <a href="tel:+79069473139">Сот.телефон: +79069473139</a>
                     </b>
                 </div>
-                <div className="main-page-about__contacts-item">
+                <div className="main-page-header__contacts-item">
                     <b>
                         <a href="mailto:m160160@yandex.ru">
                             Email: m160160@yandex.ru
@@ -34,8 +34,8 @@ export const About = (): React$Node => {
                     </b>
                 </div>
             </div>
-            <div className="main-page-about__socials-section">
-                <div className="main-page-about__socials-item">
+            <div className="main-page-header__socials-section">
+                <div className="main-page-header__socials-item">
                     <a
                         href="https://vk.com/id41167330"
                         rel="noopener noreferrer"
@@ -43,7 +43,7 @@ export const About = (): React$Node => {
                     >
                         <img
                             alt="Vk"
-                            className="main-page-about__socials-icon"
+                            className="main-page-header__socials-icon"
                             src="images/vk.png"
                         />
                     </a>
