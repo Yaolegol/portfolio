@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import "./index.less";
 
 type TProps = {
+    additionalInfo?: string,
     description: string,
     features: Array<any>,
     git: string,
@@ -13,6 +14,7 @@ type TProps = {
 };
 
 export const Slide = ({
+    additionalInfo,
     description,
     features,
     git,
@@ -58,6 +60,12 @@ export const Slide = ({
                         <i>{description}</i>
                     </div>
                 </div>
+                {additionalInfo ? (
+                    <div
+                        className="project-slider-slide__additional-info"
+                        dangerouslySetInnerHTML={{ __html: additionalInfo }}
+                    />
+                ) : null}
                 <div className="project-slider-slide__description-container">
                     <h4>Особенности проекта</h4>
                     {_features}

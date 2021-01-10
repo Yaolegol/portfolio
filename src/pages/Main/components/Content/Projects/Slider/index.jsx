@@ -13,21 +13,24 @@ export const Slider = (): React$Node => {
     const intl = useIntl();
 
     const content = useMemo(() => {
-        return projectsList.map(({ features, git, header, image }) => {
-            const { description, title } = header;
-            const { alt, src } = image;
-            return (
-                <Slide
-                    description={description}
-                    features={features}
-                    git={git}
-                    imgAlt={alt}
-                    imgSrc={src}
-                    key={git}
-                    title={title}
-                />
-            );
-        });
+        return projectsList.map(
+            ({ additionalInfo, features, git, header, image }) => {
+                const { description, title } = header;
+                const { alt, src } = image;
+                return (
+                    <Slide
+                        additionalInfo={additionalInfo}
+                        description={description}
+                        features={features}
+                        git={git}
+                        imgAlt={alt}
+                        imgSrc={src}
+                        key={git}
+                        title={title}
+                    />
+                );
+            }
+        );
     }, []);
 
     const slideNext = useCallback(() => {
