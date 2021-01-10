@@ -1,6 +1,19 @@
 @import (reference) '~styles/adaptive';
 @import (reference) '~styles/colors';
 
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-weight: 400;
+    src: url('/src/fonts/Chivo-Regular.ttf');
+}
+
+@default: {
+    @color: @black;
+    @font-family: 'Noto Sans SC', sans-serif;
+    @font-size: 16px;
+    @line-height: 26px;
+}
+
 .create-font(
     @color: @default[@color];
     @font-family: @default[@font-family];
@@ -11,19 +24,6 @@
     font-family: @font-family;
     font-size: @font-size;
     line-height: @line-height;
-}
-
-@default: {
-    @color: @black;
-    @font-family: 'Noto Sans SC', sans-serif;
-    @font-size: 16px;
-    @line-height: 26px;
-}
-
-@font-face {
-    font-family: 'Noto Sans SC';
-    font-weight: 400;
-    src: url('/src/fonts/Chivo-Regular.ttf');
 }
 
 .f_h1 {
@@ -39,6 +39,11 @@
     .create-font(@font-size: 60px; @line-height: 65px;);
 
     text-transform: uppercase;
+
+    @media @mobile {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 
 .f_h3 {
