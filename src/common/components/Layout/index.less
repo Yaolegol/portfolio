@@ -1,14 +1,10 @@
 @import (reference) '~styles/adaptive';
 
 .layout {
-    height: 100%;
     margin: 0 auto;
     max-width: 1920px;
-    padding-top: 84px;
-
-    @media @mobile {
-        padding-top: 48px;
-    }
+    min-height: 100%;
+    padding-top: 50px;
 
     &__children-container {
         &_flex {
@@ -18,7 +14,7 @@
     }
 
     &__content {
-        height: 100%;
+        min-height: 100%;
         overflow-y: auto;
 
         @media @mobile {
@@ -29,16 +25,5 @@
             display: flex;
             flex-direction: column;
         }
-    }
-
-    &__footer {
-        background-color: green;
-        height: 500px;
-    }
-
-    &__hero {
-        height: 100%;
-        max-height: 1080px;
-        min-height: 600px;
     }
 }

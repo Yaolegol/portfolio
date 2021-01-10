@@ -9,8 +9,8 @@ type TProps = {
 export const Layout = ({ children }: TProps): React$Node => {
     return (
         <div className="layout">
-            <div className={"layout__content"}>
-                <div className={"layout__children-container"}>{children}</div>
+            <div className="layout__content">
+                <div className="layout__children-container">{children}</div>
             </div>
         </div>
     );
