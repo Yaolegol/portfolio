@@ -11,7 +11,7 @@ type TProps = {
     title: string,
 };
 
-export const SliderMainSlide = ({
+export const Slide = ({
     description,
     imgAlt,
     imgSrc,

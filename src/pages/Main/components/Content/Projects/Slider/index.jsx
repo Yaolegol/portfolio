@@ -1,12 +1,12 @@
 // @flow
-import { SliderMainSlide } from "pages/Main/components/Content/Projects/ProjectsSlider/SliderMainSlide";
+import { Slider as CommonSlider } from "common/components/Slider";
 import ArrowIcon from "images/arrow-right.svg";
-import { Slider } from "common/components/Slider";
+import { Slide } from "pages/Main/components/Content/Projects/Slider/Slide";
 import React, { useState, useCallback } from "react";
 import { useIntl } from "react-intl";
 import "./index.less";
 
-export const ProjectsSlider = (): React$Node => {
+export const Slider = (): React$Node => {
     const [swiper, setSwiper] = useState();
 
     const intl = useIntl();
@@ -25,8 +25,8 @@ export const ProjectsSlider = (): React$Node => {
 
     return (
         <div className="project-slider">
-            <Slider onSwiper={setSwiper}>
-                <SliderMainSlide
+            <CommonSlider onSwiper={setSwiper}>
+                <Slide
                     buttonText={intl.formatMessage({
                         id: "common.buttons.shopNow.title",
                     })}
@@ -40,7 +40,7 @@ export const ProjectsSlider = (): React$Node => {
                         id: "hero.slide.title",
                     })}
                 />
-                <SliderMainSlide
+                <Slide
                     buttonText={intl.formatMessage({
                         id: "common.buttons.shopNow.title",
                     })}
@@ -54,7 +54,7 @@ export const ProjectsSlider = (): React$Node => {
                         id: "hero.slide.title",
                     })}
                 />
-                <SliderMainSlide
+                <Slide
                     buttonText={intl.formatMessage({
                         id: "common.buttons.shopNow.title",
                     })}
@@ -68,7 +68,7 @@ export const ProjectsSlider = (): React$Node => {
                         id: "hero.slide.title",
                     })}
                 />
-            </Slider>
+            </CommonSlider>
             <div className="project-slider__controls">
                 <button
                     className="project-slider__control-button"
