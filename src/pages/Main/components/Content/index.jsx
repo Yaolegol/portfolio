@@ -6,7 +6,7 @@ import React, { useCallback, useMemo, useState } from "react";
 import "./index.less";
 
 export const Content = (): React$Node => {
-    const [contentId, setContentId] = useState("about");
+    const [contentId, setContentId] = useState("projects");
 
     const changeContent = useCallback(
         (id) => () => {

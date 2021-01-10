@@ -2,86 +2,47 @@
 @import (reference) '~styles/colors';
 
 .project-slider-slide {
+    align-items: center;
     display: flex;
     flex: 1;
+    flex-direction: column;
+    text-align: center;
 
-    &__button-container {
-        margin-top: 100px;
+    &__description {
+        margin-top: 5px;
 
-        @media @laptop {
-            margin-top: 50px;
-        }
-
-        @media @mobile {
-            margin-top: 25px;
-        }
-    }
-
-    &__content {
-        max-width: 600px;
-        position: relative;
-    }
-
-    &__content-description {
-        color: @white;
-        margin-top: 35px;
-
-        @media @mobile {
-            margin-top: 15px;
+        &::before {
+            content: "•";
+            margin-right: 10px;
         }
     }
 
-    &__content-header {
-        color: @white;
-        font-weight: 900;
+    &__description-container {
+        margin-top: 50px;
     }
 
-    &__content-section {
-        display: flex;
-        background-color: @black;
-        color: @white;
-        flex: 1 1 50%;
-        flex-direction: column;
-        padding: 100px 100px 50px;
-        position: relative;
-        text-align: left;
+    &__description-item {
+        margin-top: 20px;
+    }
 
-        @media @laptop {
-            padding: 100px 50px 50px;
-        }
+    &__git-container {
+        display: inline-block;
+        margin-top: 50px;
+    }
 
-        @media @mobile {
-            background-size: cover;
-            padding: 50px;
+    &__git-icon {
+        height: 64px;
+        object-fit: cover;
+        width: 64px;
+    }
 
-            &::before {
-                background-color: fade(@black, 20%);
-                bottom: 0;
-                content: '';
-                left: 0;
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-        }
+    &__header-container {
+        margin-top: 50px;
     }
 
     &__image {
-        height: 100%;
+        height: 825px;
         object-fit: cover;
-        width: 100%;
-    }
-
-    &__image-section {
-        flex: 1 1 50%;
-
-        @media @mobile {
-            display: none;
-        }
-    }
-
-    &__slide {
-        display: flex;
-        flex: 1;
+        width: 1110px;
     }
 }

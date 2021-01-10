@@ -27,43 +27,31 @@ export const Slider = (): React$Node => {
         <div className="project-slider">
             <CommonSlider onSwiper={setSwiper}>
                 <Slide
-                    buttonText={intl.formatMessage({
-                        id: "common.buttons.shopNow.title",
-                    })}
                     description={intl.formatMessage({
                         id: "hero.slide.description",
                     })}
-                    imgAlt="Hero"
+                    imgAlt="Concrete"
                     imgSrc="images/concrete.png"
-                    onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
                     })}
                 />
                 <Slide
-                    buttonText={intl.formatMessage({
-                        id: "common.buttons.shopNow.title",
-                    })}
                     description={intl.formatMessage({
                         id: "hero.slide.description",
                     })}
-                    imgAlt="Hero"
+                    imgAlt="Takeoff"
                     imgSrc="images/takeoff.png"
-                    onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
                     })}
                 />
                 <Slide
-                    buttonText={intl.formatMessage({
-                        id: "common.buttons.shopNow.title",
-                    })}
                     description={intl.formatMessage({
                         id: "hero.slide.description",
                     })}
-                    imgAlt="Hero"
+                    imgAlt="This"
                     imgSrc="images/cats.jpg"
-                    onClick={() => console.log("click")}
                     title={intl.formatMessage({
                         id: "hero.slide.title",
                     })}
