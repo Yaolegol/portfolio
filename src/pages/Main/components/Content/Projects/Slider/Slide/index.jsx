@@ -50,12 +50,6 @@ export const Slide = ({
 
     return (
         <div className="project-slider-slide">
-            <a
-                className="project-slider-slide__link"
-                href={link}
-                rel="nofollow noreferrer"
-                target="_blank"
-            />
             <img
                 alt={imgAlt}
                 className="project-slider-slide__image"
@@ -78,11 +72,21 @@ export const Slide = ({
                     <h4>Особенности проекта</h4>
                     {_features}
                 </div>
+                <div className="project-slider-slide__project-link-container">
+                    <a href={link} rel="nofollow noreferrer" target="_blank">
+                        <img
+                            alt="Github"
+                            className="project-slider-slide__icon"
+                            src={imgSrc}
+                        />
+                        <div>Открыть проект</div>
+                    </a>
+                </div>
                 <div className="project-slider-slide__git-container">
                     <a href={git} rel="nofollow noreferrer" target="_blank">
                         <img
                             alt="Github"
-                            className="project-slider-slide__git-icon"
+                            className="project-slider-slide__icon"
                             src="images/github.png"
                         />
                         <div>Посмотреть код</div>
