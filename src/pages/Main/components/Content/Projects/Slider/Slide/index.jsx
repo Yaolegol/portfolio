@@ -41,7 +41,7 @@ export const Slide = ({
                     className="project-slider-slide__description-item"
                     key={title}
                 >
-                    <h6>{title}</h6>
+                    <h4>{title}</h4>
                     {_description}
                 </div>
             );

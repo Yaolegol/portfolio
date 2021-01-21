@@ -4,9 +4,37 @@
         "features": [
             {
                 "descriptionList": [
-                    "test", "test", "test"
+                    "выполнен с использованием react, react-router, redux, redux-thunk, formik, classnames, reselect, less, swiper",
+                    "адаптивная верстка",
+                    "типизация flow",
+                    "линтеры eslint, stylelint",
+                    "autoprefixer postcss",
+                    "кастомная сборка webpack (НЕ create react app)"
                 ],
-                "title": "test title"
+                "title": "Client"
+            },
+            {
+                "descriptionList": [
+                    "выполнен с использованием node, express, multer, mongoose, jsonwebtoken, cloudinary",
+                    "база данных MongoDB Cloud",
+                    "хранилище картинок cloudinary",
+                    "авторизация через jsonwebtoken"
+                ],
+                "title": "Server"
+            },
+            {
+                "descriptionList": [
+                    "sing in, log in, log out",
+                    "просматривать историю заказов (для login пользователей)",
+                    "создавать продукты (для admin пользователей)",
+                    "просматривать поступившие заказы (для admin пользователей)",
+                    "просматривать свои личные заказы (для admin пользователей)",
+                    "сортировать товары по цене",
+                    "фильтровать товары по цене",
+                    "заказывать товары",
+                    "просматривать текущую корзину"
+                ],
+                "title": "Возможности"
             }
         ],
         "git": "https://github.com/Yaolegol/Concrete",
