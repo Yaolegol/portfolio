@@ -4,8 +4,10 @@
         "features": [
             {
                 "descriptionList": [
-                    "выполнен с использованием react, react-router, redux, redux-thunk, formik, classnames, reselect, less, swiper",
+                    "выполнен с использованием react, react-router, react-intl, redux, redux-thunk, formik, classnames, reselect, less, swiper",
                     "адаптивная верстка",
+                    "возможность выбора языка (en/ru)",
+                    "динамическая загрузка модулей",
                     "типизация flow",
                     "линтеры eslint, stylelint",
                     "autoprefixer postcss",
@@ -32,7 +34,8 @@
                     "сортировать товары по цене",
                     "фильтровать товары по цене",
                     "заказывать товары",
-                    "просматривать текущую корзину"
+                    "просматривать текущую корзину",
+                    "возможность выбора языка (en/ru)"
                 ],
                 "title": "Возможности"
             }
@@ -52,9 +55,18 @@
         "features": [
             {
                 "descriptionList": [
-                    "test", "test", "test"
+                    "выполнен с использованием handlebars, less, swiper",
+                    "возможно интегрировать с любым бэкендом за счет использования handlebars",
+                    "адаптивная верстка",
+                    "кастомная сборка webpack"
                 ],
-                "title": "test title"
+                "title": "Client"
+            },
+            {
+                "descriptionList": [
+                    "выполнен с использованием node, express"
+                ],
+                "title": "Server"
             }
         ],
         "git": "https://github.com/Yaolegol/TAKEOFF",
@@ -72,9 +84,17 @@
         "features": [
             {
                 "descriptionList": [
-                    "test", "test", "test"
+                    "выполнен с использованием react, less, swiper",
+                    "адаптивная верстка",
+                    "возможность выбора языка (en/ru)"
                 ],
-                "title": "test title"
+                "title": "Client"
+            },
+            {
+                "descriptionList": [
+                    "выполнен с использованием node, express"
+                ],
+                "title": "Server"
             }
         ],
         "git": "https://github.com/Yaolegol/portfolio",
