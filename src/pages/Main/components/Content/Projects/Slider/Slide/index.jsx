@@ -72,24 +72,30 @@ export const Slide = ({
                     <h4>Особенности проекта</h4>
                     {_features}
                 </div>
-                <div className="project-slider-slide__project-link-container">
-                    <a href={link} rel="nofollow noreferrer" target="_blank">
-                        <img
-                            alt="Github"
-                            className="project-slider-slide__icon"
-                            src={imgSrc}
-                        />
-                        <div>Открыть проект</div>
-                    </a>
-                </div>
+                {link ? (
+                    <div className="project-slider-slide__project-link-container">
+                        <a
+                            href={link}
+                            rel="nofollow noreferrer"
+                            target="_blank"
+                        >
+                            <img
+                                alt="Github"
+                                className="project-slider-slide__project-icon"
+                                src={imgSrc}
+                            />
+                            <h5>Открыть проект</h5>
+                        </a>
+                    </div>
+                ) : null}
                 <div className="project-slider-slide__git-container">
                     <a href={git} rel="nofollow noreferrer" target="_blank">
                         <img
                             alt="Github"
-                            className="project-slider-slide__icon"
+                            className="project-slider-slide__git-icon"
                             src="images/github.png"
                         />
-                        <div>Посмотреть код</div>
+                        <h5>Посмотреть код</h5>
                     </a>
                 </div>
             </div>
