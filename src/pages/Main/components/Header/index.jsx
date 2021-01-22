@@ -1,4 +1,5 @@
 // @flow
+import { LangSelect } from "modules/Locale/components/LangSelect";
 import React from "react";
 import "./index.less";
 
@@ -10,6 +11,9 @@ export const Header = (): React$Node => {
                 className="main-page-header__photo"
                 src="images/avatar.jpg"
             />
+            <div className="main-page-header__lang-select-container">
+                <LangSelect />
+            </div>
             <div className="main-page-header__header-section">
                 <h1>Олег Олейник</h1>
                 <div className="main-page-header__header-description">
