@@ -46,7 +46,6 @@ export const Slider = (): React$Node => {
 
     return (
         <div className="project-slider">
-            <CommonSlider onSwiper={setSwiper}>{content}</CommonSlider>
             <div className="project-slider__controls">
                 <button
                     className="project-slider__control-button"
@@ -66,6 +65,9 @@ export const Slider = (): React$Node => {
                     </span>
                     <ArrowIcon className="project-slider__control-icon" />
                 </button>
+            </div>
+            <div className="project-slider__slider-container">
+                <CommonSlider onSwiper={setSwiper}>{content}</CommonSlider>
             </div>
         </div>
     );

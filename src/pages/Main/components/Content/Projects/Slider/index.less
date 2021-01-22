@@ -2,17 +2,10 @@
 @import (reference) '~styles/flex';
 
 .project-slider {
-    height: 100%;
-    position: relative;
-
     &__controls {
         align-items: center;
         display: flex;
-        left: 50%;
-        position: absolute;
-        top: -80px;
-        transform: translateX(-50%);
-        z-index: 9;
+        justify-content: center;
     }
 
     &__controls-description {
@@ -51,5 +44,9 @@
                 color: @white;
             }
         }
+    }
+
+    &__slider-container {
+        margin-top: 50px;
     }
 }
