@@ -1,50 +1,50 @@
 [
     {
-        "description": ["32"],
-        "title": "Возраст"
+        "description": ["about.age.value"],
+        "title": "about.age.title"
     },
     {
-        "description": ["Томск"],
-        "title": "Город"
-    },
-    {
-        "description": ["Высшее (ЮИ ТГУ, очная, бюджетная формы обучения)"],
-        "title": "Образование"
+        "description": ["about.city.value"],
+        "title": "about.city.title"
     },
     {
         "description": [
-            "- Frontend разработчик (с 2019 по настоящее время)",
-            "- Юрисконсульт (с 2012 по 2019 года)"
+            "about.education.value1",
+            "about.education.value2"
         ],
-        "title": "Работа"
+        "title": "about.education.title"
     },
     {
         "description": [
-            "Frontend (преимущественно), backend, mobile development"
+            "about.workExperience.value1",
+            "about.workExperience.value2"
         ],
-        "title": "Интересы"
+        "title": "about.workExperience.title"
     },
     {
         "description": [
-            "HTML, CSS, БЭМ, Sass, less, адаптивная верстка, js, jQuery, react, react-router, redux, redux-promise, redux-thunk, reselect, classnames, Flow, next, axios, ajax, fetch, promise, async-await, pug, ejs, handlebars, webpack, gulp, material-ui, bootstrap, git, jira, jest, mocha, node, express, multer, JWT, mongodb, mongoose, sql, php, c#, ООП, REST API, GraphQL, React Native, Flutter, docker, Angular, Vue, Figma, Ubuntu, MacOS, Visual Studio, VSCode, PHPStorm"
+            "about.interests.value"
         ],
-        "title": "Что изучил?"
+        "title": "about.interests.title"
     },
     {
         "description": [
-            "HTML, CSS, less, адаптивная верстка, js, react, react-router, redux, redux-thunk, reselect, classnames, Flow, fetch, promise, async-await, webpack, git, REST API, React Native, Flutter, docker, Figma, Ubuntu, MacOS, PHPStorm"
+            "about.skills.value"
         ],
-        "title": "Технологии, которые использовал в production"
+        "title": "about.skills.title"
     },
     {
         "description": [
-            "- Создавал компоненты (верстка, интеграция с backend) разного уровня сложности на react.js,",
-            "- Верстал страницы с использованием HTML и less,",
-            "- Интегрировал приложение с backend`ом на чистом js,",
-            "- Создавал компоненты (верстка, интеграция с backend) на React Native,",
-            "- Создавал компоненты (верстка, интеграция с backend) на Flutter,",
-            "- Правил баги в существующих проектах"
+            "about.useInProd.value"
         ],
-        "title": "Что делал в роли frontend разработчика?"
+        "title": "about.useInProd.title"
+    },
+    {
+        "description": [
+            "about.experience.value1",
+            "about.experience.value2",
+            "about.experience.value3"
+        ],
+        "title": "about.experience.title"
     }
 ]
