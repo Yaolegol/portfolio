@@ -69,7 +69,6 @@ export const Slide = ({
                     />
                 ) : null}
                 <div className="project-slider-slide__description-container">
-                    <h4>Особенности проекта</h4>
                     {_features}
                 </div>
                 {link ? (
