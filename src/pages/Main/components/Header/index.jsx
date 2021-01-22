@@ -1,6 +1,7 @@
 // @flow
 import { LangSelect } from "modules/Locale/components/LangSelect";
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import "./index.less";
 
 export const Header = (): React$Node => {
@@ -15,25 +16,28 @@ export const Header = (): React$Node => {
                 <LangSelect />
             </div>
             <div className="main-page-header__header-section">
-                <h1>Олег Олейник</h1>
+                <h1>
+                    <FormattedMessage id="main.name" />
+                </h1>
                 <div className="main-page-header__header-description">
-                    Frontend developer
+                    <FormattedMessage id="main.profession" />
                 </div>
             </div>
             <div className="main-page-header__description-section">
-                На этом сайте Вы можете посмотреть мои проекты, а также основную
-                информацию обо мне как о frontend разработчике
+                <FormattedMessage id="main.description" />
             </div>
             <div className="main-page-header__contacts-section">
                 <div className="main-page-header__contacts-item">
                     <b>
-                        <a href="tel:+79069473139">Сот.телефон: +79069473139</a>
+                        <a href="tel:+79069473139">
+                            {<FormattedMessage id="main.phone" />}: +79069473139
+                        </a>
                     </b>
                 </div>
                 <div className="main-page-header__contacts-item">
                     <b>
-                        <a href="mailto:m160160@yandex.ru">
-                            Email: m160160@yandex.ru
+                        <a href="mailto:web160160@gmail.com">
+                            Email: web160160@gmail.com
                         </a>
                     </b>
                 </div>
