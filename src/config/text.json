@@ -21,6 +21,8 @@
         "about.workExperience.value1": "Frontend developer (from 2019 to the present)",
         "about.workExperience.value2": "Legal adviser (from 2012 to 2019)",
         "main.description": "On this site, you can view my projects, as well as basic information about me as a frontend developer",
+        "main.menu.about": "About me",
+        "main.menu.projects": "My projects",
         "main.name": "Oleg Oleinik",
         "main.phone": "Phone",
         "main.profession": "Frontend developer"
@@ -47,6 +49,8 @@
         "about.workExperience.value1": "Frontend разработчик (с 2019 по настоящее время)",
         "about.workExperience.value2": "Юрисконсульт (с 2012 по 2019 года)",
         "main.description": "На этом сайте Вы можете посмотреть мои проекты, а также основную информацию обо мне как о frontend разработчике",
+        "main.menu.about": "Обо мне",
+        "main.menu.projects": "Мои проекты",
         "main.name": "Олег Олейник",
         "main.phone": "Сот. телефон",
         "main.profession": "Frontend developer"

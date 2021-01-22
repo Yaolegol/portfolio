@@ -3,6 +3,7 @@ import cn from "classnames";
 import { About } from "pages/Main/components/Content/About";
 import { Projects } from "pages/Main/components/Content/Projects";
 import React, { useCallback, useMemo, useState } from "react";
+import { FormattedMessage } from "react-intl";
 import "./index.less";
 
 export const Content = (): React$Node => {
@@ -43,7 +44,7 @@ export const Content = (): React$Node => {
                             src="images/people.png"
                         />
                         <div className="main-page-content__tab-description">
-                            Обо мне
+                            <FormattedMessage id="main.menu.about" />
                         </div>
                     </div>
                 </button>
@@ -61,7 +62,7 @@ export const Content = (): React$Node => {
                             src="images/projects.png"
                         />
                         <div className="main-page-content__tab-description">
-                            Мои проекты
+                            <FormattedMessage id="main.menu.projects" />
                         </div>
                     </div>
                 </button>
