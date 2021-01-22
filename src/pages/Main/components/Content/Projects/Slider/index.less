@@ -6,28 +6,22 @@
     position: relative;
 
     &__controls {
+        align-items: center;
         display: flex;
         left: 50%;
         position: absolute;
-        top: -45px;
+        top: -80px;
         transform: translateX(-50%);
         z-index: 9;
     }
 
-    &__control-button {
-        .f_c();
+    &__controls-description {
+        &_prev {
+            margin-left: 20px;
+        }
 
-        background-color: @white;
-        cursor: pointer;
-        height: 45px;
-        width: 45px;
-
-        &:hover {
-            background-color: @blue;
-
-            .slider-main__control-icon {
-                color: @white;
-            }
+        &_next {
+            margin-right: 20px;
         }
     }
 
@@ -38,6 +32,24 @@
 
         &_left {
             transform: rotate(180deg);
+        }
+    }
+
+    &__control-button {
+        .f_c();
+
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+        padding: 20px;
+
+        &:hover {
+            background-color: @blue;
+            color: @white;
+
+            .project-slider__control-icon {
+                color: @white;
+            }
         }
     }
 }
