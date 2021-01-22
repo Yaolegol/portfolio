@@ -5,6 +5,7 @@ import { Slide } from "pages/Main/components/Content/Projects/Slider/Slide";
 import projectsList from "config/projects.json";
 import React, { useCallback, useMemo, useState } from "react";
 import "./index.less";
+import {FormattedMessage} from "react-intl";
 
 export const Slider = (): React$Node => {
     const [swiper, setSwiper] = useState();
@@ -53,7 +54,7 @@ export const Slider = (): React$Node => {
                 >
                     <ArrowIcon className="project-slider__control-icon project-slider__control-icon_left" />
                     <span className="project-slider__controls-description project-slider__controls-description_prev">
-                        prev project
+                        <FormattedMessage id="main.slider.prevControlTitle" />
                     </span>
                 </button>
                 <button
@@ -61,7 +62,7 @@ export const Slider = (): React$Node => {
                     onClick={slideNext}
                 >
                     <span className="project-slider__controls-description project-slider__controls-description_next">
-                        next project
+                        <FormattedMessage id="main.slider.nextControlTitle" />
                     </span>
                     <ArrowIcon className="project-slider__control-icon" />
                 </button>

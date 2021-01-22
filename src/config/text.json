@@ -25,7 +25,9 @@
         "main.menu.projects": "My projects",
         "main.name": "Oleg Oleinik",
         "main.phone": "Phone",
-        "main.profession": "Frontend developer"
+        "main.profession": "Frontend developer",
+        "main.slider.nextControlTitle": "next project",
+        "main.slider.prevControlTitle": "prev project"
     },
     "ru": {
         "about.age.title": "Возраст",
@@ -53,6 +55,8 @@
         "main.menu.projects": "Мои проекты",
         "main.name": "Олег Олейник",
         "main.phone": "Сот. телефон",
-        "main.profession": "Frontend developer"
+        "main.profession": "Frontend developer",
+        "main.slider.nextControlTitle": "следующий проект",
+        "main.slider.prevControlTitle": "предыдущий проект"
     }
 }
