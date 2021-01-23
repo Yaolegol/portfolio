@@ -26,22 +26,25 @@ export const Slide = ({
     title,
 }: TProps): React$Node => {
     const _additionalInfo = useMemo(() => {
-        return additionalInfo.map(({ isBold, message }) => {
-            return (
-                <div
-                    className="project-slider-slide__additional-info-item"
-                    key={getRandomString()}
-                >
-                    {isBold ? (
-                        <b>
+        if (additionalInfo) {
+            return additionalInfo.map(({ isBold, message }) => {
+                return (
+                    <div
+                        className="project-slider-slide__additional-info-item"
+                        key={getRandomString()}
+                    >
+                        {isBold ? (
+                            <b>
+                                <FormattedMessage id={message} />
+                            </b>
+                        ) : (
                             <FormattedMessage id={message} />
-                        </b>
-                    ) : (
-                        <FormattedMessage id={message} />
-                    )}
-                </div>
-            );
-        });
+                        )}
+                    </div>
+                );
+            });
+        }
+        return null;
     }, [additionalInfo]);
 
     const _features = useMemo(() => {
@@ -104,7 +107,9 @@ export const Slide = ({
                                 className="project-slider-slide__project-icon"
                                 src={imgSrc}
                             />
-                            <h5>Открыть проект</h5>
+                            <h5>
+                                <FormattedMessage id="projects.common.openProject.title" />
+                            </h5>
                         </a>
                     </div>
                 ) : null}
@@ -115,7 +120,9 @@ export const Slide = ({
                             className="project-slider-slide__git-icon"
                             src="images/github.png"
                         />
-                        <h5>Посмотреть код</h5>
+                        <h5>
+                            <FormattedMessage id="projects.common.viewCode.title" />
+                        </h5>
                     </a>
                 </div>
             </div>
