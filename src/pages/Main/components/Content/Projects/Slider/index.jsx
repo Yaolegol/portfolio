@@ -4,8 +4,8 @@ import ArrowIcon from "images/arrow-right.svg";
 import { Slide } from "pages/Main/components/Content/Projects/Slider/Slide";
 import projectsList from "config/projects.json";
 import React, { useCallback, useMemo, useState } from "react";
+import { FormattedMessage } from "react-intl";
 import "./index.less";
-import {FormattedMessage} from "react-intl";
 
 export const Slider = (): React$Node => {
     const [swiper, setSwiper] = useState();

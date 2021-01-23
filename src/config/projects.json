@@ -1,49 +1,62 @@
 [
     {
-        "additionalInfo": "<div>Email и пароль для входа как админ\n<b>Email - admin@admin.com\nпароль - 123123\n</b></div>",
+        "additionalInfo": [
+            {
+                "isBold": false,
+                "message": "projects.concrete.additionalInfo.value1"
+            },
+            {
+                "isBold": true,
+                "message": "projects.concrete.additionalInfo.value2"
+            },
+            {
+                "isBold": true,
+                "message": "projects.concrete.additionalInfo.value3"
+            }
+        ],
         "features": [
             {
                 "descriptionList": [
-                    "выполнен с использованием react, react-router, react-intl, redux, redux-thunk, formik, classnames, reselect, less, swiper",
-                    "адаптивная верстка",
-                    "возможность выбора языка (en/ru)",
-                    "динамическая загрузка модулей",
-                    "типизация flow",
-                    "линтеры eslint, stylelint",
-                    "autoprefixer postcss",
-                    "кастомная сборка webpack (НЕ create react app)"
+                    "projects.concrete.features.client.value1",
+                    "projects.concrete.features.client.value2",
+                    "projects.concrete.features.client.value3",
+                    "projects.concrete.features.client.value4",
+                    "projects.concrete.features.client.value5",
+                    "projects.concrete.features.client.value6",
+                    "projects.concrete.features.client.value7",
+                    "projects.concrete.features.client.value8"
                 ],
-                "title": "Client"
+                "title": "projects.concrete.features.client.title"
             },
             {
                 "descriptionList": [
-                    "выполнен с использованием node, express, multer, mongoose, jsonwebtoken, cloudinary",
-                    "база данных MongoDB Cloud",
-                    "хранилище картинок cloudinary",
-                    "авторизация через jsonwebtoken"
+                    "projects.concrete.features.server.value1",
+                    "projects.concrete.features.server.value2",
+                    "projects.concrete.features.server.value3",
+                    "projects.concrete.features.server.value4"
                 ],
-                "title": "Server"
+                "title": "projects.concrete.features.server.title"
             },
             {
                 "descriptionList": [
-                    "sing in, log in, log out",
-                    "просматривать историю заказов (для login пользователей)",
-                    "создавать продукты (для admin пользователей)",
-                    "просматривать поступившие заказы (для admin пользователей)",
-                    "просматривать свои личные заказы (для admin пользователей)",
-                    "сортировать товары по цене",
-                    "фильтровать товары по цене",
-                    "заказывать товары",
-                    "просматривать текущую корзину",
-                    "возможность выбора языка (en/ru)"
+                    "projects.concrete.features.abilities.value1",
+                    "projects.concrete.features.abilities.value2",
+                    "projects.concrete.features.abilities.value3",
+                    "projects.concrete.features.abilities.value4",
+                    "projects.concrete.features.abilities.value5",
+                    "projects.concrete.features.abilities.value6",
+                    "projects.concrete.features.abilities.value7",
+                    "projects.concrete.features.abilities.value8",
+                    "projects.concrete.features.abilities.value9",
+                    "projects.concrete.features.abilities.value10"
                 ],
-                "title": "Возможности"
+                "title": "projects.concrete.features.abilities.title"
             }
         ],
         "git": "https://github.com/Yaolegol/Concrete",
         "header": {
-            "description": "(online store)",
-            "title": "concrete"
+            "description": "projects.concrete.description",
+            "title": "projects.concrete.title"
         },
         "image": {
             "alt": "Concrete",
