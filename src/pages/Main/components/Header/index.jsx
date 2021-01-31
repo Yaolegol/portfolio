@@ -15,19 +15,34 @@ export const Header = (): React$Node => {
     const socialLinks = useMemo(() => {
         if (currentLocale === "ru") {
             return (
-                <div className="main-page-header__socials-item">
-                    <a
-                        href="https://vk.com/id41167330"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        <img
-                            alt="Vk"
-                            className="main-page-header__socials-icon"
-                            src="images/vk.png"
-                        />
-                    </a>
-                </div>
+                <>
+                    <div className="main-page-header__socials-item">
+                        <a
+                            href="https://www.linkedin.com/in/oleg-oleinik-160160"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <img
+                                alt="LinkedIn"
+                                className="main-page-header__socials-icon"
+                                src="images/linkedin.svg"
+                            />
+                        </a>
+                    </div>
+                    <div className="main-page-header__socials-item">
+                        <a
+                            href="https://vk.com/id41167330"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <img
+                                alt="Vk"
+                                className="main-page-header__socials-icon"
+                                src="images/vk.png"
+                            />
+                        </a>
+                    </div>
+                </>
             );
         }
         return (
@@ -44,7 +59,7 @@ export const Header = (): React$Node => {
                     />
                 </a>
             </div>
-        )
+        );
     }, [currentLocale]);
 
     return (
