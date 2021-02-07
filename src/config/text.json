@@ -143,7 +143,7 @@
         "projects.portfolio.features.client.title": "Client",
         "projects.portfolio.features.client.value1": "выполнен с использованием react, less, swiper",
         "projects.portfolio.features.client.value2": "адаптивная верстка",
-        "projects.portfolio.features.client.value3": "возможность выбора языка (en/ru)",
+        "projects.portfolio.features.client.value3": "возможность выбора локали (en/ru)",
         "projects.portfolio.features.server.title": "Server",
         "projects.portfolio.features.server.value1": "выполнен с использованием node, express",
         "projects.portfolio.title": "Portfolio",
