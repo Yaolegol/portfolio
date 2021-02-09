@@ -1,14 +1,21 @@
 # Start project
 
-##1. Install dependencies
+## 1. Установить зависимости
 > npm i
 
-##2. Run project
+## 2. Собрать проект
+> npm run build
+
+## 3. Запустить сервер
+> cd ./server
+
+> npm i
+
 > npm start
 
-Project start on **8080** port
+Проект стартует на **8000** порту
 
-##3. Enjoy!
+## 4. Enjoy!
 
 # About project
 
