@@ -1,6 +1,6 @@
 // @flow
-import { Content } from "main/Home/components/Content";
-import { Header } from "main/Home/components/Header";
+import { Content } from "main/Home/Content";
+import { Header } from "main/Home/Header";
 import React from "react";
 import "./index.less";
 
