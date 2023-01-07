@@ -4,111 +4,127 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
-module.exports = {
-    devServer: {
-        historyApiFallback: true,
-        hot: true,
-        inline: true,
-        port: 8080,
-    },
-    devtool: "source-map",
-    entry: "./src/index.jsx",
-    output: {
-        path: path.join(__dirname, "/dist"),
-        filename: "[name].[hash].js",
-    },
-    module: {
-        rules: [
-            // babel
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
+module.exports = (env, argv) => {
+    const isProduction = argv.mode === "production";
+
+    return {
+        devServer: {
+            historyApiFallback: true,
+            hot: true,
+            inline: true,
+            port: 8080,
+        },
+        devtool: isProduction ? false : "source-map",
+        entry: "./src/index.jsx",
+        output: {
+            path: path.resolve(__dirname, "dist"),
+            filename: isProduction
+                ? "[name].[contenthash].js"
+                : "[name].[hash].js",
+        },
+        module: {
+            rules: [
+                // babel
+                {
+                    test: /\.(js|jsx)$/,
+                    exclude: /node_modules/,
+                    use: {
+                        loader: "babel-loader",
+                    },
                 },
-            },
-            // less
-            {
-                test: /\.less$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader",
-                        options: {
-                            modules: {
-                                localIdentName: "[local]",
+                // less modules
+                {
+                    test: /\.module\.less$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: "css-loader",
+                            options: {
+                                esModule: true,
+                                modules: {
+                                    localIdentName: isProduction
+                                        ? "[hash:base64]"
+                                        : "[local]",
+                                },
+                                url: false,
                             },
                         },
-                    },
-                    "postcss-loader",
-                    "less-loader",
-                ],
-            },
-            // css
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "style-loader",
-                    "css-loader",
-                    "postcss-loader",
-                ],
-            },
-            // images
-            {
-                test: /\.(png|jpg)$/,
-                use: ["file-loader"],
-            },
-            // svg
-            {
-                test: /\.svg$/,
-                use: ["@svgr/webpack"],
-            },
-            // fonts
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: ["file-loader"],
-            },
-        ],
-    },
-    optimization: {
-        moduleIds: "hashed",
-        runtimeChunk: "single",
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: "vendors",
-                    chunks: "all",
+                        "postcss-loader",
+                        "less-loader",
+                    ],
                 },
-            },
-        },
-    },
-    plugins: [
-        new CopyPlugin({
-            patterns: [
+                // less
                 {
-                    from: "src/images",
-                    to: "images",
+                    test: /\.less$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: "css-loader",
+                            options: {
+                                url: false,
+                            },
+                        },
+                        "postcss-loader",
+                        "less-loader",
+                    ],
+                },
+                // css
+                {
+                    test: /\.css$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        "style-loader",
+                        "css-loader",
+                        "postcss-loader",
+                    ],
+                },
+                // images
+                {
+                    test: /\.(png|jpg)$/,
+                    use: ["file-loader"],
+                },
+                // svg
+                {
+                    test: /\.svg$/,
+                    use: ["@svgr/webpack"],
+                },
+                // fonts
+                {
+                    test: /\.(woff|woff2|eot|ttf|otf)$/,
+                    use: ["file-loader"],
                 },
             ],
-        }),
-        new HtmlWebPackPlugin({
-            filename: "index.html",
-            hash: true,
-            template: "src/index.html",
-            title: "My app",
-        }),
-        new MiniCssExtractPlugin({
-            ignoreOrder: true,
-        }),
-        new CleanWebpackPlugin(),
-    ],
-    resolve: {
-        extensions: [".js", ".jsx"],
-        modules: [
-            path.resolve(__dirname, "src"),
-            path.resolve(__dirname, "node_modules"),
+        },
+        optimization: {
+            splitChunks: {
+                chunks: "all",
+            },
+        },
+        plugins: [
+            new CopyPlugin({
+                patterns: [
+                    {
+                        from: "src/images",
+                        to: "images",
+                    },
+                ],
+            }),
+            new HtmlWebPackPlugin({
+                filename: "index.html",
+                template: "src/index.html",
+                title: "My app",
+            }),
+            new MiniCssExtractPlugin({
+                ignoreOrder: true,
+            }),
+            new CleanWebpackPlugin(),
         ],
-    },
+        resolve: {
+            extensions: [".js", ".jsx"],
+            modules: [
+                path.resolve(__dirname, "src"),
+                path.resolve(__dirname, "node_modules"),
+            ],
+        },
+    };
 };
