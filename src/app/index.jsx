@@ -1,23 +1,11 @@
 // @flow
-import React, { Suspense } from "react";
+import Home from "main/Home";
+import React from "react";
 import { hot } from "react-hot-loader/root";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-const MainPage = React.lazy(() => import("pages/Main"));
+import "./index.less";
 
 const App = () => {
-    return (
-        <Router>
-            <Suspense fallback={<div />}>
-                <Switch>
-                    <Route path="/">
-                        <MainPage />
-                    </Route>
-                </Switch>
-            </Suspense>
-        </Router>
-    );
+    return <Home />;
 };
 
-// TODO remove hot from prod
-export default (hot(App): any);
+export default hot(App);

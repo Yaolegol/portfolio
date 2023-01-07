@@ -1,5 +1,5 @@
 // @flow
-import { Slider } from "pages/Main/components/Content/Projects/Slider";
+import { Slider } from "main/Home/components/Content/Projects/Slider";
 import React from "react";
 import "./index.less";
 

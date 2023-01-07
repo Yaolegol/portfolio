@@ -1,7 +1,7 @@
 // @flow
 import cn from "classnames";
-import { About } from "pages/Main/components/Content/About";
-import { Projects } from "pages/Main/components/Content/Projects";
+import { About } from "main/Home/components/Content/About";
+import { Projects } from "main/Home/components/Content/Projects";
 import React, { useCallback, useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";

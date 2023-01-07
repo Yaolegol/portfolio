@@ -1,11 +1,11 @@
 // @flow
 import { Layout } from "common/components/Layout";
-import { Header } from "pages/Main/components/Header";
-import { Content } from "pages/Main/components/Content";
+import { Content } from "main/Home/components/Content";
+import { Header } from "main/Home/components/Header";
 import React from "react";
 import "./index.less";
 
-const MainPage = (): React$Node => {
+const Home = (): React$Node => {
     return (
         <Layout>
             <div className="main-page">
@@ -16,4 +16,4 @@ const MainPage = (): React$Node => {
     );
 };
 
-export default MainPage;
+export default Home;

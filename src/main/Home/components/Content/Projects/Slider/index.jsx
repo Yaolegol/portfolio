@@ -1,7 +1,7 @@
 // @flow
 import { Slider as CommonSlider } from "common/components/Slider";
 import ArrowIcon from "images/arrow-right.svg";
-import { Slide } from "pages/Main/components/Content/Projects/Slider/Slide";
+import { Slide } from "main/Home/components/Content/Projects/Slider/Slide";
 import projectsList from "config/projects.json";
 import React, { useCallback, useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
