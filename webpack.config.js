@@ -11,8 +11,6 @@ module.exports = (env, argv) => {
         devServer: {
             historyApiFallback: true,
             hot: true,
-            inline: true,
-            port: 8080,
         },
         devtool: isProduction ? false : "source-map",
         entry: "./src/index.jsx",
