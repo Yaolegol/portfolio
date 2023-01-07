@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl";
 import "./index.less";
 
 type TProps = {
-    additionalInfo?: string,
+    additionalInfo?: Array<any>,
     description: string,
     features: Array<any>,
     git: string,
