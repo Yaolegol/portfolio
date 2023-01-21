@@ -1,5 +1,5 @@
 // @flow
-import { Layout } from "common/components/Layout";
+import { Layout } from "modules/Layout";
 import Home from "main/Home";
 import React from "react";
 import { hot } from "react-hot-loader/root";
