@@ -1,70 +1,47 @@
 @import (reference) '~styles/adaptive';
 @import (reference) '~styles/colors';
 
-@default: {
-    @color: @black;
-    @font-family: 'Areal', sans-serif;
-    @font-size: 16px;
-    @line-height: 26px;
-}
-
-.create-font(
-    @color: @default[@color];
-    @font-family: @default[@font-family];
-    @font-size: @default[@font-size];
-    @line-height: @default[@line-height];
-) {
-    color: @color;
-    font-family: @font-family;
-    font-size: @font-size;
-    line-height: @line-height;
+.f_default {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .f_h1 {
-    .create-font(
-        @font-size: 40px;
-        @line-height: 48px;
-    );
-
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
 }
 
 .f_h2 {
-    .create-font(@font-size: 60px; @line-height: 65px;);
-
+    font-size: 60px;
+    line-height: 72px;
     text-transform: uppercase;
 
     @media @mobile {
         font-size: 30px;
-        line-height: 45px;
+        line-height: 36px;
     }
 }
 
 .f_h3 {
-    .create-font(@font-size: 44px; @line-height: 50px;);
-
+    font-size: 44px;
+    line-height: 52px;
     text-transform: uppercase;
 }
 
 .f_h4 {
-    .create-font(@font-size: 50px; @line-height: 56px;);
-
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
 }
 
 .f_h5 {
-    .create-font(@font-size: 22px; @line-height: 24px;);
-
-    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .f_h6 {
-    .create-font(@font-size: 20px; @line-height: 24px;);
-
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
     text-transform: capitalize;
-}
-
-.f_p {
-    .create-font();
 }
