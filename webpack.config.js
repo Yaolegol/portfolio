@@ -2,6 +2,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const path = require("path");
 
 module.exports = (env, argv) => {
@@ -84,7 +85,10 @@ module.exports = (env, argv) => {
                 // svg
                 {
                     test: /\.svg$/,
-                    use: ["@svgr/webpack"],
+                    loader: "svg-sprite-loader",
+                    options: {
+                        extract: true,
+                    },
                 },
                 // fonts
                 {
@@ -99,6 +103,7 @@ module.exports = (env, argv) => {
             },
         },
         plugins: [
+            new SpriteLoaderPlugin(),
             new CopyPlugin({
                 patterns: [
                     {

@@ -9,6 +9,10 @@
         color: @gray;
         height: 64px;
         width: 64px;
+
+        .home-page-content__tabs-button:hover & {
+            color: @blue;
+        }
     }
 
     &__tabs-button {
@@ -27,18 +31,7 @@
         }
 
         &:hover {
-            background-color: @blue;
-            border-bottom-color: transparent;
-            border-radius: 5px;
-
-            .home-page-content__tab-description {
-                color: @white;
-                font-size: 20px;
-            }
-
-            .home-page-content__tab-icon {
-                display: none;
-            }
+            color: @blue;
         }
     }
 

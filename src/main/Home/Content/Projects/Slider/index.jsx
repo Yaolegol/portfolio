@@ -1,10 +1,10 @@
 // @flow
 import { Slider as CommonSlider } from "common/components/Slider";
-import ArrowIcon from "images/arrow-right.svg";
 import { Slide } from "main/Home/Content/Projects/Slider/Slide";
 import projectsList from "config/projects.json";
 import React, { useCallback, useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
+import "icons/arrow-right.svg";
 import "./index.less";
 
 export const Slider = (): React$Node => {
@@ -51,7 +51,9 @@ export const Slider = (): React$Node => {
                     className="project-slider__control-button"
                     onClick={slidePrev}
                 >
-                    <ArrowIcon className="project-slider__control-icon project-slider__control-icon_left" />
+                    <svg className="project-slider__control-icon project-slider__control-icon_left">
+                        <use href="/sprite.svg#arrow-right" />
+                    </svg>
                     <span className="project-slider__controls-description project-slider__controls-description_prev">
                         <FormattedMessage id="main.slider.prevControlTitle" />
                     </span>
@@ -63,7 +65,9 @@ export const Slider = (): React$Node => {
                     <span className="project-slider__controls-description project-slider__controls-description_next">
                         <FormattedMessage id="main.slider.nextControlTitle" />
                     </span>
-                    <ArrowIcon className="project-slider__control-icon" />
+                    <svg className="project-slider__control-icon">
+                        <use href="/sprite.svg#arrow-right" />
+                    </svg>
                 </button>
             </div>
             <div className="project-slider__slider-container">

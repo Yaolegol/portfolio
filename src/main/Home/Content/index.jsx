@@ -4,6 +4,8 @@ import { About } from "main/Home/Content/About";
 import { Projects } from "main/Home/Content/Projects";
 import React, { useCallback, useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
+import "icons/profile.svg";
+import "icons/projects.svg";
 import "./index.less";
 
 export const Content = (): React$Node => {
@@ -38,11 +40,9 @@ export const Content = (): React$Node => {
                     onClick={changeContent("about")}
                 >
                     <div className="home-page-content__tab">
-                        <img
-                            alt="About me"
-                            className="home-page-content__tab-icon"
-                            src="/icons/profile.svg"
-                        />
+                        <svg className="home-page-content__tab-icon">
+                            <use href="/sprite.svg#profile" />
+                        </svg>
                         <div className="home-page-content__tab-description">
                             <FormattedMessage id="main.menu.about" />
                         </div>
@@ -56,11 +56,9 @@ export const Content = (): React$Node => {
                     onClick={changeContent("projects")}
                 >
                     <div className="home-page-content__tab">
-                        <img
-                            alt="My projects"
-                            className="home-page-content__tab-icon"
-                            src="/icons/projects.svg"
-                        />
+                        <svg className="home-page-content__tab-icon">
+                            <use href="/sprite.svg#projects" />
+                        </svg>
                         <div className="home-page-content__tab-description">
                             <FormattedMessage id="main.menu.projects" />
                         </div>
