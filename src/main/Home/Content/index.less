@@ -1,43 +1,12 @@
 @import (reference) '~styles/colors';
 
 .home-page-content {
-    &__tab {
-        text-align: center;
-    }
-
-    &__tab-icon {
-        color: @gray;
-        height: 64px;
-        width: 64px;
-
-        .home-page-content__tabs-button:hover & {
-            color: @blue;
-        }
-    }
-
-    &__tabs-button {
-        align-items: center;
-        border-bottom: 2px solid @white;
-        border-radius: 0;
-        cursor: pointer;
-        display: flex;
-        height: 150px;
-        justify-content: center;
-        position: relative;
-        width: 150px;
-
-        &_active {
-            border-bottom-color: @blue;
-        }
-
-        &:hover {
-            color: @blue;
-        }
+    &__content-section {
+        margin-top: 50px;
     }
 
     &__tabs-container {
-        align-items: center;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 }

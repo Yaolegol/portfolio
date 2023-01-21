@@ -1,9 +1,9 @@
 {
     "en": {
         "about.age.title": "Age",
-        "about.age.value": "32",
+        "about.age.value": "34",
         "about.city.title": "City",
-        "about.city.value": "Tomsk (Russia)",
+        "about.city.value": "Tomsk, Russia",
         "about.education.title": "Education",
         "about.education.value1": "Master's degree in Law (Higher education, full-time budget forms)",
         "about.education.value2": "Now I am getting my second higher education in computer science (bachelor's degree)",
@@ -81,7 +81,7 @@
     },
     "ru": {
         "about.age.title": "Возраст",
-        "about.age.value": "32",
+        "about.age.value": "34",
         "about.city.title": "Город",
         "about.city.value": "Томск",
         "about.education.title": "Образование",

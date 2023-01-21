@@ -24,6 +24,9 @@ export const Header = (): React$Node => {
                 <div className="home-page-header__header-description">
                     <FormattedMessage id="main.profession" />
                 </div>
+                <div className="home-page-header__header-description">
+                    work experience as frontend developer: 3+
+                </div>
             </div>
             <div className="home-page-header__description-section">
                 <FormattedMessage id="main.description" />

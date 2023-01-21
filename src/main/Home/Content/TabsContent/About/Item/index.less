@@ -1,0 +1,19 @@
+@import (reference) '~styles/colors';
+
+.main-page-content-tabs-content-about-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    margin-top: 25px;
+
+    &__description {
+        &.bold {
+            font-weight: 700;
+        }
+    }
+
+    &__title-container {
+        font-weight: 700;
+        text-align: right;
+    }
+}

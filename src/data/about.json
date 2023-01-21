@@ -1,0 +1,59 @@
+[
+    {
+        "descriptionList": [
+            {
+                "description": "about.city.value"
+            }
+        ],
+        "title": "about.city.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.education.value1"
+            },
+            {
+                "description": "about.education.value2"
+            }
+        ],
+        "title": "about.education.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.interests.value"
+            }
+        ],
+        "title": "about.interests.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.skills.value"
+            }
+        ],
+        "title": "about.skills.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.useInProd.value"
+            }
+        ],
+        "title": "about.useInProd.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.experience.value1"
+            },
+            {
+                "description": "about.experience.value2"
+            },
+            {
+                "description": "about.experience.value3"
+            }
+        ],
+        "title": "about.experience.title"
+    }
+]

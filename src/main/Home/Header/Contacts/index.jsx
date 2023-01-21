@@ -1,5 +1,5 @@
 // @flow
-import contactsData from "config/contacts.json";
+import contactsData from "data/contacts.json";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";

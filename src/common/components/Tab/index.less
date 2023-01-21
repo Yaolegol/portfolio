@@ -1,0 +1,35 @@
+@import (reference) '~styles/colors';
+
+.tab {
+    align-items: center;
+    border-bottom: 2px solid @white;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    width: 150px;
+
+    &.active {
+        border-bottom-color: @blue;
+    }
+
+    &:hover {
+        color: @blue;
+    }
+
+    &__description {
+        margin-top: 5px;
+    }
+
+    &__icon {
+        color: @gray;
+        height: 64px;
+        width: 64px;
+
+        .tab:hover & {
+            color: @blue;
+        }
+    }
+}
