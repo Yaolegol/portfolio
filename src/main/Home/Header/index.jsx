@@ -26,10 +26,12 @@ export const Header = (): React$Node => {
                     <FormattedMessage id="main.profession" />
                 </div>
                 <div className="home-page-header__header-description-additional">
-                    (<FormattedMessage id="main.workExperience" />:{" "}
+                    (
+                    <FormattedMessage id="main.workExperience" />:{" "}
                     <span className="home-page-header__header-work-experience">
                         {getWorkExperience()}
-                    </span>)
+                    </span>
+                    )
                 </div>
             </div>
             <div className="home-page-header__description-section">
