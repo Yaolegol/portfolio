@@ -1,11 +1,11 @@
 // @flow
+import { getWorkExperience } from "common/helpers/personalData";
 import { Contacts } from "main/Home/Header/Contacts";
 import { SocialLinks } from "main/Home/Header/SocialLinks";
 import { LangSelect } from "modules/Locale/components/LangSelect";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";
-import { getWorkExperience } from "../../../common/helpers/personalData";
 
 export const Header = (): React$Node => {
     return (
