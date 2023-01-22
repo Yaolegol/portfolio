@@ -23,14 +23,8 @@ const workExperienceData = {
             isBold: true,
             useIntl: false,
         },
-        {
-            description: "about.workExperience.value1",
-        },
-        {
-            description: "about.workExperience.value2",
-        },
     ],
-    title: "about.workExperience.title",
+    title: "about.workExperienceFrontend.title",
 };
 
 export const About = (): React$Node => {

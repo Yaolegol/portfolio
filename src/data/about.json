@@ -11,12 +11,20 @@
         "descriptionList": [
             {
                 "description": "about.education.value1"
-            },
-            {
-                "description": "about.education.value2"
             }
         ],
         "title": "about.education.title"
+    },
+    {
+        "descriptionList": [
+            {
+                "description": "about.workExperience.value1"
+            },
+            {
+                "description": "about.workExperience.value2"
+            }
+        ],
+        "title": "about.workExperience.title"
     },
     {
         "descriptionList": [
