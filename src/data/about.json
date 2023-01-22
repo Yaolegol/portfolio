@@ -40,7 +40,24 @@
     {
         "descriptionList": [
             {
-                "description": "about.skills.value"
+                "description": "about.skills.value1",
+                "title": "about.skills.value1Title"
+            },
+            {
+                "description": "about.skills.value2",
+                "title": "about.skills.value2Title"
+            },
+            {
+                "description": "about.skills.value3",
+                "title": "about.skills.value3Title"
+            },
+            {
+                "description": "about.skills.value4",
+                "title": "about.skills.value4Title"
+            },
+            {
+                "description": "about.skills.value5",
+                "title": "about.skills.value5Title"
             }
         ],
         "title": "about.skills.title"

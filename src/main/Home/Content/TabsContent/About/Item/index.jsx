@@ -9,6 +9,7 @@ type TProps = {
     descriptionDataList: Array<{
         description: string | React$Node,
         isBold?: boolean,
+        title?: string,
         useIntl?: boolean,
     }>,
     title: string,
@@ -25,7 +26,7 @@ export const AboutItem = ({
             </div>
             <div className="main-page-content-tabs-content-about-item__description-container">
                 {descriptionDataList.map(
-                    ({ description, isBold, useIntl = true }) => {
+                    ({ description, isBold, title, useIntl = true }) => {
                         return (
                             <div
                                 className={cn(
@@ -34,6 +35,13 @@ export const AboutItem = ({
                                 )}
                                 key={getRandomString()}
                             >
+                                {title ? (
+                                    <span className="main-page-content-tabs-content-about-item__description-title">
+                                        <FormattedMessage id={title} />
+                                    </span>
+                                ) : (
+                                    ""
+                                )}
                                 {useIntl ? (
                                     <FormattedMessage id={description} />
                                 ) : (
