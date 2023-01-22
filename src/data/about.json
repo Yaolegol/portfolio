@@ -11,6 +11,9 @@
         "descriptionList": [
             {
                 "description": "about.education.value1"
+            },
+            {
+                "description": "about.education.value2"
             }
         ],
         "title": "about.education.title"
