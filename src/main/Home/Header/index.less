@@ -1,3 +1,5 @@
+@import (reference) '~styles/font';
+
 .home-page-header {
     align-items: center;
     display: flex;
@@ -18,8 +20,18 @@
         margin-top: 10px;
     }
 
+    &__header-description-additional {
+        .f_small();
+
+        font-style: italic;
+    }
+
     &__header-section {
         margin-top: 50px;
+    }
+
+    &__header-work-experience {
+        font-weight: 700;
     }
 
     &__lang-select-container {

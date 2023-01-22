@@ -5,6 +5,7 @@ import { LangSelect } from "modules/Locale/components/LangSelect";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";
+import { getWorkExperience } from "../../../common/helpers/personalData";
 
 export const Header = (): React$Node => {
     return (
@@ -24,8 +25,11 @@ export const Header = (): React$Node => {
                 <div className="home-page-header__header-description">
                     <FormattedMessage id="main.profession" />
                 </div>
-                <div className="home-page-header__header-description">
-                    work experience as frontend developer: 3+
+                <div className="home-page-header__header-description-additional">
+                    (<FormattedMessage id="main.workExperience" />:{" "}
+                    <span className="home-page-header__header-work-experience">
+                        {getWorkExperience()}
+                    </span>)
                 </div>
             </div>
             <div className="home-page-header__description-section">
