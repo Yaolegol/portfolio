@@ -65,14 +65,6 @@
     {
         "descriptionList": [
             {
-                "description": "about.useInProd.value"
-            }
-        ],
-        "title": "about.useInProd.title"
-    },
-    {
-        "descriptionList": [
-            {
                 "description": "about.experience.value1"
             },
             {

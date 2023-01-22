@@ -16,6 +16,24 @@ const ageData = {
     title: "about.age.title",
 };
 
+const productionExperience = {
+    descriptionList: [
+        {
+            description: "about.useInProd.value1",
+            title: "about.useInProd.value1Title",
+        },
+        {
+            description: "about.useInProd.value2",
+            title: "about.useInProd.value2Title",
+        },
+        {
+            description: "about.useInProd.value3",
+            title: "about.useInProd.value3Title",
+        },
+    ],
+    title: "about.useInProd.title",
+};
+
 const workExperienceData = {
     descriptionList: [
         {
@@ -33,6 +51,10 @@ export const About = (): React$Node => {
             <AboutItem
                 descriptionDataList={workExperienceData.descriptionList}
                 title={workExperienceData.title}
+            />
+            <AboutItem
+                descriptionDataList={productionExperience.descriptionList}
+                title={productionExperience.title}
             />
             <AboutItem
                 descriptionDataList={ageData.descriptionList}
