@@ -72,6 +72,9 @@
             },
             {
                 "description": "about.experience.value3"
+            },
+            {
+                "description": "about.experience.value4"
             }
         ],
         "title": "about.experience.title"
