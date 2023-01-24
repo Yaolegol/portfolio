@@ -75,11 +75,33 @@ export const Slide = ({
 
     return (
         <div className="project-slider-slide">
-            <img
-                alt={imgAlt}
-                className="project-slider-slide__image"
-                src={imgSrc}
-            />
+            {link ? (
+                <a href={link} rel="nofollow noreferrer" target="_blank">
+                    <img
+                        alt={imgAlt}
+                        className="project-slider-slide__image"
+                        src={imgSrc}
+                    />
+                </a>
+            ) : (
+                <img
+                    alt={imgAlt}
+                    className="project-slider-slide__image"
+                    src={imgSrc}
+                />
+            )}
+            <div className="project-slider-slide__git-container">
+                <a href={git} rel="nofollow noreferrer" target="_blank">
+                    <img
+                        alt="Github"
+                        className="project-slider-slide__git-icon"
+                        src="/icons/git/git.svg"
+                    />
+                    <h5>
+                        <FormattedMessage id="projects.common.viewCode.title" />
+                    </h5>
+                </a>
+            </div>
             <div className="project-slider-slide__content-section">
                 <div className="project-slider-slide__header-container">
                     <h2>
@@ -94,36 +116,6 @@ export const Slide = ({
                 {_additionalInfo}
                 <div className="project-slider-slide__description-container">
                     {_features}
-                </div>
-                {link ? (
-                    <div className="project-slider-slide__project-link-container">
-                        <a
-                            href={link}
-                            rel="nofollow noreferrer"
-                            target="_blank"
-                        >
-                            <img
-                                alt="Github"
-                                className="project-slider-slide__project-icon"
-                                src={imgSrc}
-                            />
-                            <h5>
-                                <FormattedMessage id="projects.common.openProject.title" />
-                            </h5>
-                        </a>
-                    </div>
-                ) : null}
-                <div className="project-slider-slide__git-container">
-                    <a href={git} rel="nofollow noreferrer" target="_blank">
-                        <img
-                            alt="Github"
-                            className="project-slider-slide__git-icon"
-                            src="/icons/git/git.svg"
-                        />
-                        <h5>
-                            <FormattedMessage id="projects.common.viewCode.title" />
-                        </h5>
-                    </a>
                 </div>
             </div>
         </div>
