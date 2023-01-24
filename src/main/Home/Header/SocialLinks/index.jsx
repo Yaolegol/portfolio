@@ -19,7 +19,7 @@ export const SocialLinks = (): React$Node => {
                         <img
                             alt="LinkedIn"
                             className="home-page-header-social-links__socials-icon"
-                            src="/images/linkedin.svg"
+                            src="/images/social/ln.png"
                         />
                     </a>
                 </div>
@@ -31,8 +31,8 @@ export const SocialLinks = (): React$Node => {
                     >
                         <img
                             alt="Vk"
-                            className="home-page-header-social-links__socials-icon"
-                            src="/images/vk.png"
+                            className="home-page-header-social-links__socials-icon home-page-header-social-links__socials-icon_vk"
+                            src="/icons/social/vk.svg"
                         />
                     </a>
                 </div>
@@ -51,7 +51,7 @@ export const SocialLinks = (): React$Node => {
                     <img
                         alt="LinkedIn"
                         className="home-page-header-social-links__socials-icon"
-                        src="/images/linkedin.svg"
+                        src="/images/social/ln.png"
                     />
                 </a>
             </div>

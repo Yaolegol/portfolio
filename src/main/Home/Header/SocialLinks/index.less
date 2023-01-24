@@ -1,11 +1,20 @@
 .home-page-header-social-links {
+    display: flex;
+    margin-top: 10px;
+
     &__socials-icon {
-        height: 64px;
-        object-fit: cover;
         width: 64px;
+
+        &_vk {
+            width: 54px;
+        }
     }
 
     &__socials-item {
-        margin-top: 10px;
+        margin-left: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }

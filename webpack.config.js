@@ -16,10 +16,10 @@ module.exports = (env, argv) => {
         devtool: isProduction ? false : "source-map",
         entry: "./src/index.jsx",
         output: {
-            path: path.resolve(__dirname, "dist"),
             filename: isProduction
                 ? "[name].[contenthash].js"
                 : "[name].[hash].js",
+            path: path.resolve(__dirname, "dist"),
         },
         module: {
             rules: [
