@@ -90,6 +90,11 @@ export const Slide = ({
                     src={imgSrc}
                 />
             )}
+            <div className="project-slider-slide__badge-container">
+                <div className="project-slider-slide__badge-update">
+                    Last update: Jan 2023
+                </div>
+            </div>
             <div className="project-slider-slide__git-container">
                 <a href={git} rel="nofollow noreferrer" target="_blank">
                     <img
