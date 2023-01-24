@@ -1,10 +1,9 @@
 // @flow
 import { Slider as CommonSlider } from "common/components/Slider";
+import { SliderControls } from "main/Home/Content/TabsContent/Projects/Slider/Controls";
 import { Slide } from "main/Home/Content/TabsContent/Projects/Slider/Slide";
 import projectsList from "data/projects.json";
-import React, { useCallback, useMemo, useState } from "react";
-import { FormattedMessage } from "react-intl";
-import "icons/arrow-right.svg";
+import React, { useMemo, useState } from "react";
 import "./index.less";
 
 export const Slider = (): React$Node => {
@@ -32,45 +31,10 @@ export const Slider = (): React$Node => {
         );
     }, []);
 
-    const slideNext = useCallback(() => {
-        if (swiper) {
-            swiper.slideNext(700);
-        }
-    }, [swiper]);
-
-    const slidePrev = useCallback(() => {
-        if (swiper) {
-            swiper.slidePrev(700);
-        }
-    }, [swiper]);
-
     return (
-        <div className="project-slider">
-            <div className="project-slider__controls">
-                <button
-                    className="project-slider__control-button"
-                    onClick={slidePrev}
-                >
-                    <svg className="project-slider__control-icon project-slider__control-icon_left">
-                        <use href="/sprite.svg#arrow-right" />
-                    </svg>
-                    <span className="project-slider__controls-description project-slider__controls-description_prev">
-                        <FormattedMessage id="main.slider.prevControlTitle" />
-                    </span>
-                </button>
-                <button
-                    className="project-slider__control-button"
-                    onClick={slideNext}
-                >
-                    <span className="project-slider__controls-description project-slider__controls-description_next">
-                        <FormattedMessage id="main.slider.nextControlTitle" />
-                    </span>
-                    <svg className="project-slider__control-icon">
-                        <use href="/sprite.svg#arrow-right" />
-                    </svg>
-                </button>
-            </div>
-            <div className="project-slider__slider-container">
+        <div className="home-page-content-tabs-content-projects-slider">
+            <SliderControls swiper={swiper} />
+            <div className="home-page-content-tabs-content-projects-slider__slider-container">
                 <CommonSlider onSwiper={setSwiper}>{content}</CommonSlider>
             </div>
         </div>

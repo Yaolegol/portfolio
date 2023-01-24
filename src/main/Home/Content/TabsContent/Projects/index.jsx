@@ -5,7 +5,7 @@ import "./index.less";
 
 export const Projects = (): React$Node => {
     return (
-        <div className="main-page-content-projects">
+        <div className="home-page-content-tabs-content-projects">
             <Slider />
         </div>
     );
