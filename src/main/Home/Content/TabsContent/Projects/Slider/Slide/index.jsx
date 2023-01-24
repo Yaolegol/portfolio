@@ -118,7 +118,7 @@ export const Slide = ({
                         <img
                             alt="Github"
                             className="project-slider-slide__git-icon"
-                            src="images/github.png"
+                            src="/icons/git/git.svg"
                         />
                         <h5>
                             <FormattedMessage id="projects.common.viewCode.title" />
