@@ -15,17 +15,21 @@ export const Slider = (): React$Node => {
                 const { description, title } = header;
                 const { alt, src } = image;
                 return (
-                    <Slide
-                        additionalInfo={additionalInfo}
-                        description={description}
-                        features={features}
-                        git={git}
-                        imgAlt={alt}
-                        imgSrc={src}
+                    <div
+                        className="home-page-content-tabs-content-projects-slider__slide-container"
                         key={git}
-                        link={link}
-                        title={title}
-                    />
+                    >
+                        <Slide
+                            additionalInfo={additionalInfo}
+                            description={description}
+                            features={features}
+                            git={git}
+                            imgAlt={alt}
+                            imgSrc={src}
+                            link={link}
+                            title={title}
+                        />
+                    </div>
                 );
             }
         );

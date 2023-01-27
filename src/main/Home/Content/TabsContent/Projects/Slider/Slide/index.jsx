@@ -75,21 +75,21 @@ export const Slide = ({
 
     return (
         <div className="project-slider-slide">
-            {link ? (
-                <a href={link} rel="nofollow noreferrer" target="_blank">
-                    <img
-                        alt={imgAlt}
-                        className="project-slider-slide__image"
-                        src={imgSrc}
-                    />
-                </a>
-            ) : (
+            <div className="project-slider-slide__image-container">
                 <img
                     alt={imgAlt}
                     className="project-slider-slide__image"
                     src={imgSrc}
                 />
-            )}
+                {link ? (
+                    <a
+                        className="project-slider-slide__link"
+                        href={link}
+                        rel="nofollow noreferrer"
+                        target="_blank"
+                    ></a>
+                ) : null}
+            </div>
             <div className="project-slider-slide__badge-container">
                 <div className="project-slider-slide__badge-update">
                     Last update: Jan 2023
@@ -102,9 +102,9 @@ export const Slide = ({
                         className="project-slider-slide__git-icon"
                         src="/icons/git/git.svg"
                     />
-                    <h5>
+                    <div>
                         <FormattedMessage id="projects.common.viewCode.title" />
-                    </h5>
+                    </div>
                 </a>
             </div>
             <div className="project-slider-slide__content-section">
