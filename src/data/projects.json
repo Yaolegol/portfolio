@@ -60,7 +60,7 @@
         },
         "image": {
             "alt": "Concrete",
-            "src": "images/concrete.png"
+            "src": "images/concrete.webp"
         },
         "link": "https://concrete.oleg-oleinik.com"
     },
@@ -90,7 +90,7 @@
         },
         "image": {
             "alt": "Takeoff",
-            "src": "images/takeoff.png"
+            "src": "images/takeoff.webp"
         },
         "link": "https://takeoff.oleg-oleinik.com"
     },
@@ -118,7 +118,7 @@
         },
         "image": {
             "alt": "Cats",
-            "src": "images/cats.jpg"
+            "src": "images/cats.webp"
         },
         "link": ""
     }

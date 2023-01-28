@@ -13,7 +13,7 @@ export const Header = (): React$Node => {
             <img
                 alt="Avatar"
                 className="home-page-header__photo"
-                src="/images/avatar.jpg"
+                src="/images/avatar.webp"
             />
             <div className="home-page-header__lang-select-container">
                 <LangSelect />
