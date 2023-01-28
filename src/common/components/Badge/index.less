@@ -1,9 +1,15 @@
 @import (reference) '~styles/colors';
+@import (reference) '~styles/shadow';
 
 .badge {
     background-color: @green;
-    border-radius: 16px;
+    border-radius: 32px;
+    box-shadow: @shadow;
     color: @white;
     font-weight: 700;
     padding: 10px 20px;
+
+    &_blue {
+        background-color: @blue;
+    }
 }

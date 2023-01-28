@@ -1,6 +1,7 @@
 @import (reference) '~styles/adaptive';
 @import (reference) '~styles/colors';
 @import (reference) '~styles/position';
+@import (reference) '~styles/shadow';
 
 .card-project-header {
     text-align: center;
@@ -19,6 +20,21 @@
         display: flex;
         justify-content: center;
         margin-top: 25px;
+    }
+
+    &__open-project-link {
+        border-radius: 32px;
+        box-shadow: @shadow;
+        display: inline-block;
+        padding: 10px 20px;
+
+        &:hover {
+            box-shadow: @shadow_hover;
+        }
+    }
+
+    &__open-project-link-container {
+        margin-top: 15px;
     }
 
     &__git-container {
@@ -42,10 +58,6 @@
         line-height: 0;
         padding-bottom: 53%;
         position: relative;
-    }
-
-    &__link {
-        .absolute_fill();
     }
 
     &__title-container {

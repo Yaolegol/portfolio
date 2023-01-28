@@ -54,18 +54,21 @@ export const CardProjectHeader = ({
                     className="card-project-header__image"
                     src={imgSrc}
                 />
-                {link ? (
-                    <a
-                        className="card-project-header__link"
-                        href={link}
-                        rel="nofollow noreferrer"
-                        target="_blank"
-                    />
-                ) : null}
             </div>
             <div className="card-project-header__badge-container">
                 <Badge>Last update: Jan 2023</Badge>
             </div>
+            {link ? (
+                <div className="card-project-header__open-project-link-container">
+                    <a
+                        className="card-project-header__open-project-link"
+                        href={link}
+                        target="_blank"
+                    >
+                        View project
+                    </a>
+                </div>
+            ) : null}
             <div className="card-project-header__git-container">
                 <a href={git} rel="nofollow noreferrer" target="_blank">
                     <img
