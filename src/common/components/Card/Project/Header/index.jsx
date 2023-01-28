@@ -63,6 +63,7 @@ export const CardProjectHeader = ({
                     <a
                         className="card-project-header__open-project-link"
                         href={link}
+                        rel="nofollow noreferrer"
                         target="_blank"
                     >
                         View project
