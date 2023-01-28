@@ -31,6 +31,7 @@ export const Slider = ({
         <div className="slider">
             <Swiper
                 {...rest}
+                autoHeight
                 spaceBetween={spaceBetween}
                 slidesPerView={slidesPerView}
             >
