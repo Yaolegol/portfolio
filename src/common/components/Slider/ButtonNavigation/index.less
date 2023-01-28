@@ -1,0 +1,56 @@
+@import (reference) '~styles/adaptive';
+@import (reference) '~styles/colors';
+@import (reference) '~styles/flex';
+
+.slider-button-navigation {
+    .f_c();
+
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 20px;
+    padding: 20px;
+    transition: 0.3s;
+
+    @media @mobile {
+        margin: 0 5px;
+        padding: 10px;
+    }
+
+    &:hover {
+        background-color: @blue;
+        color: @white;
+    }
+
+    &.swiper-button-disabled {
+        color: @gray-1;
+        pointer-events: none;
+    }
+
+    &__description {
+        .slider-button-navigation_prev & {
+            order: 1;
+        }
+    }
+
+    &__icon {
+        color: @blue;
+        height: 25px;
+        margin: 0 0 0 20px;
+        transition: 0.3s;
+        width: 25px;
+
+        .slider-button-navigation_prev & {
+            margin: 0 20px 0 0;
+            transform: rotate(180deg);
+        }
+
+        .slider-button-navigation:hover & {
+            color: @white;
+        }
+
+        .slider-button-navigation.swiper-button-disabled & {
+            color: @gray-1;
+        }
+    }
+}
