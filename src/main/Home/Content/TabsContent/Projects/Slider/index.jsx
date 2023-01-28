@@ -16,19 +16,21 @@ export const Slider = (): React$Node => {
                 const { alt, src } = image;
                 return (
                     <div
-                        className="home-page-content-tabs-content-projects-slider__slide-container"
+                        className="home-page-content-tabs-content-projects-slider__project-card-slide"
                         key={git}
                     >
-                        <CardProject
-                            additionalInfo={additionalInfo}
-                            description={description}
-                            features={features}
-                            git={git}
-                            imgAlt={alt}
-                            imgSrc={src}
-                            link={link}
-                            title={title}
-                        />
+                        <div className="home-page-content-tabs-content-projects-slider__project-card-container">
+                            <CardProject
+                                additionalInfo={additionalInfo}
+                                description={description}
+                                features={features}
+                                git={git}
+                                imgAlt={alt}
+                                imgSrc={src}
+                                link={link}
+                                title={title}
+                            />
+                        </div>
                     </div>
                 );
             }
