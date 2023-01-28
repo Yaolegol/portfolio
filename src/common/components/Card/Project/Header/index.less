@@ -1,5 +1,6 @@
 @import (reference) '~styles/adaptive';
 @import (reference) '~styles/colors';
+@import (reference) '~styles/position';
 
 .card-project-header {
     text-align: center;
@@ -32,22 +33,19 @@
     }
 
     &__image {
-        width: 100%;
+        .absolute_fill();
+
+        object-fit: cover;
     }
 
     &__image-container {
         line-height: 0;
+        padding-bottom: 53%;
         position: relative;
     }
 
     &__link {
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
+        .absolute_fill();
     }
 
     &__title-container {
