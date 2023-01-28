@@ -1,0 +1,31 @@
+@import (reference) '~styles/adaptive';
+@import (reference) '~styles/colors';
+
+.card-project-body {
+    text-align: center;
+
+    &__description {
+        margin-top: 5px;
+
+        &::before {
+            content: "•";
+            margin-right: 10px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__description-container {
+        margin-top: 20px;
+    }
+
+    &__description-item {
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

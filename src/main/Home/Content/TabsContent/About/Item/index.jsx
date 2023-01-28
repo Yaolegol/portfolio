@@ -1,6 +1,6 @@
 // @flow
-import cn from "classnames";
 import { getRandomString } from "common/helpers/random";
+import { stylesConcat } from "common/helpers/styles";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";
@@ -29,10 +29,10 @@ export const AboutItem = ({
                     ({ description, isBold, title, useIntl = true }) => {
                         return (
                             <div
-                                className={cn(
+                                className={stylesConcat([
                                     "main-page-content-tabs-content-about-item__description",
-                                    isBold ? "bold" : ""
-                                )}
+                                    isBold ? "bold" : "",
+                                ])}
                                 key={getRandomString()}
                             >
                                 {title ? (

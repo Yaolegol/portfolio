@@ -1,0 +1,60 @@
+@import (reference) '~styles/adaptive';
+@import (reference) '~styles/colors';
+
+.card-project-header {
+    text-align: center;
+
+    &__additional-info-container {
+        margin-top: 20px;
+    }
+
+    &__additional-info-item {
+        &_bold {
+            font-weight: 700;
+        }
+    }
+
+    &__badge-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    &__git-container {
+        display: inline-block;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__git-icon {
+        width: 64px;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__image-container {
+        line-height: 0;
+        position: relative;
+    }
+
+    &__link {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    &__title-container {
+        margin-top: 50px;
+    }
+
+    &__title-description {
+        font-style: italic;
+    }
+}

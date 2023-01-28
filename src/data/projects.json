@@ -24,7 +24,8 @@
                     "projects.concrete.features.client.value5",
                     "projects.concrete.features.client.value6",
                     "projects.concrete.features.client.value7",
-                    "projects.concrete.features.client.value8"
+                    "projects.concrete.features.client.value8",
+                    "projects.concrete.features.client.value9"
                 ],
                 "title": "projects.concrete.features.client.title"
             },
@@ -61,7 +62,7 @@
             "alt": "Concrete",
             "src": "images/concrete.png"
         },
-        "link": "https://veltry.herokuapp.com/"
+        "link": "https://concrete.oleg-oleinik.com"
     },
     {
         "features": [
@@ -92,7 +93,7 @@
             "alt": "Takeoff",
             "src": "images/takeoff.png"
         },
-        "link": "https://takeoff-rename.herokuapp.com/"
+        "link": "https://takeoff.oleg-oleinik.com"
     },
     {
         "features": [

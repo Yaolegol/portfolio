@@ -6,7 +6,7 @@ import "swiper/swiper.less";
 import "./index.less";
 
 type TProps = {
-    children: React$Node,
+    children: Array<React$Node>,
     slidesPerView?: number,
     spaceBetween?: number,
 };

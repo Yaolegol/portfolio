@@ -1,5 +1,4 @@
 // @flow
-import cn from "classnames";
 import { Tabs } from "main/Home/Content/Tabs";
 import { TabsContent } from "main/Home/Content/TabsContent";
 import React, { useCallback, useState } from "react";

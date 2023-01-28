@@ -1,5 +1,5 @@
 // @flow
-import cn from "classnames";
+import { stylesConcat } from "common/helpers/styles";
 import React, { useCallback } from "react";
 import { FormattedMessage } from "react-intl";
 import "./index.less";
@@ -25,7 +25,7 @@ export const Tab = ({
 
     return (
         <button
-            className={cn("tab", isActive ? "active" : "")}
+            className={stylesConcat(["tab", isActive ? "active" : ""])}
             onClick={handleClick}
             type="button"
         >
