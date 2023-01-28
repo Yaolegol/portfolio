@@ -56,7 +56,9 @@ export const CardProjectHeader = ({
                 />
             </div>
             <div className="card-project-header__badge-container">
-                <Badge>Last update: Jan 2023</Badge>
+                <Badge>
+                    <FormattedMessage id="projects.common.lastUpdate" />
+                </Badge>
             </div>
             {link ? (
                 <div className="card-project-header__open-project-link-container">
@@ -66,7 +68,7 @@ export const CardProjectHeader = ({
                         rel="nofollow noreferrer"
                         target="_blank"
                     >
-                        View project
+                        <FormattedMessage id="projects.common.openProject.title" />
                     </a>
                 </div>
             ) : null}
