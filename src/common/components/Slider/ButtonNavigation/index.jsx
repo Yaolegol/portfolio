@@ -15,7 +15,7 @@ export const SliderButtonNavigation: any = forwardRef(
             <button
                 className={stylesConcat([
                     "slider-button-navigation",
-                    isPrev ? "slider-button-navigation_prev" : "",
+                    isPrev ? "swiper-button-disabled slider-button-navigation_prev" : "",
                 ])}
                 ref={ref}
                 type="button"
