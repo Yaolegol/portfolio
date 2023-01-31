@@ -98,8 +98,13 @@ export const CardProjectHeader = ({
                     </div>
                 ) : null}
                 <div className="card-project-header__lighthouse-block">
-                    <h4>Lighthouse results*</h4>
-                    <div>*best of several attempts</div>
+                    <h4>
+                        <FormattedMessage id="lighthouse.results.title" />*
+                    </h4>
+                    <div>
+                        *
+                        <FormattedMessage id="lighthouse.results.description" />
+                    </div>
                     <div className="card-project-header__lighthouse-results-container">
                         <div className="card-project-header__lighthouse-item-container">
                             <LightHouseItem description="Performance" />
