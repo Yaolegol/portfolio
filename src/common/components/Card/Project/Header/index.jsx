@@ -1,6 +1,5 @@
 // @flow
 import { Badge } from "common/components/Badge";
-import { LightHouseItem } from "common/components/Lighthouse/Item";
 import { getRandomString } from "common/helpers/random";
 import { stylesConcat } from "common/helpers/styles";
 import React, { useMemo } from "react";
@@ -97,23 +96,6 @@ export const CardProjectHeader = ({
                         {_additionalInfo}
                     </div>
                 ) : null}
-                <div className="card-project-header__lighthouse-block">
-                    <h4>
-                        <FormattedMessage id="lighthouse.results.title" />*
-                    </h4>
-                    <div>
-                        *
-                        <FormattedMessage id="lighthouse.results.description" />
-                    </div>
-                    <div className="card-project-header__lighthouse-results-container">
-                        <div className="card-project-header__lighthouse-item-container">
-                            <LightHouseItem description="Performance" />
-                        </div>
-                        <div className="card-project-header__lighthouse-item-container">
-                            <LightHouseItem description="Best Practices" />
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );
