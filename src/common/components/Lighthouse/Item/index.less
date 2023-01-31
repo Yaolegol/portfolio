@@ -1,0 +1,23 @@
+@import (reference) '~styles/adaptive';
+@import (reference) '~styles/colors';
+
+.lighthouse-item {
+    &__description {
+        font-weight: 700;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    &__score {
+        align-items: center;
+        background-color: @green_30;
+        border: 8px solid @green;
+        border-radius: 50%;
+        color: @green_dark;
+        font-size: 32px;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        width: 100px;
+    }
+}

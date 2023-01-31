@@ -1,5 +1,6 @@
 @import (reference) '~styles/adaptive';
 @import (reference) '~styles/colors';
+@import (reference) '~styles/font';
 @import (reference) '~styles/position';
 @import (reference) '~styles/shadow';
 
@@ -20,6 +21,24 @@
         display: flex;
         justify-content: center;
         margin-top: 25px;
+    }
+
+    &__lighthouse-block {
+        margin-top: 25px;
+    }
+
+    &__lighthouse-item-container {
+        margin-left: 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__lighthouse-results-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
     }
 
     &__open-project-link {
