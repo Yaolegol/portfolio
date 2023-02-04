@@ -33,10 +33,15 @@
                 "descriptionList": [
                     "projects.concrete.features.server.value1",
                     "projects.concrete.features.server.value2",
-                    "projects.concrete.features.server.value3",
-                    "projects.concrete.features.server.value4"
+                    "projects.concrete.features.server.value3"
                 ],
                 "title": "projects.concrete.features.server.title"
+            },
+            {
+                "descriptionList": [
+                    "projects.concrete.features.db.value1"
+                ],
+                "title": "projects.concrete.features.db.title"
             },
             {
                 "descriptionList": [
