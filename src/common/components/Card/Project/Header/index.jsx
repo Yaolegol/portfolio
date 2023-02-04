@@ -60,8 +60,8 @@ export const CardProjectHeader = ({
                     <FormattedMessage id="projects.common.lastUpdate" />
                 </Badge>
             </div>
-            {link ? (
-                <div className="card-project-header__open-project-link-container">
+            <div className="card-project-header__open-project-link-container">
+                {link ? (
                     <a
                         className="card-project-header__open-project-link"
                         href={link}
@@ -70,8 +70,12 @@ export const CardProjectHeader = ({
                     >
                         <FormattedMessage id="projects.common.openProject.title" />
                     </a>
-                </div>
-            ) : null}
+                ) : (
+                    <span className="card-project-header__open-project-link disabled">
+                        <FormattedMessage id="projects.common.currentProject.title" />
+                    </span>
+                )}
+            </div>
             <div className="card-project-header__git-container">
                 <a href={git} rel="nofollow noreferrer" target="_blank">
                     <img
