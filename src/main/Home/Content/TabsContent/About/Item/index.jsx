@@ -53,9 +53,9 @@ export const AboutItem = ({
                         ])}
                         key={getRandomString()}
                     >
-                        {descriptionTitle}
                         <span>
-                            {descriptionContent} {_descriptionIntlPostfix}
+                            {descriptionTitle} {descriptionContent}{" "}
+                            {_descriptionIntlPostfix}
                         </span>
                     </div>
                 );

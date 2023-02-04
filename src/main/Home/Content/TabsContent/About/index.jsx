@@ -31,6 +31,14 @@ const productionExperience = {
             description: "about.useInProd.value3",
             title: "about.useInProd.value3Title",
         },
+        {
+            description: "about.useInProd.value4",
+            title: "about.useInProd.value4Title",
+        },
+        {
+            description: "about.useInProd.value5",
+            title: "about.useInProd.value5Title",
+        },
     ],
     title: "about.useInProd.title",
 };
