@@ -27,9 +27,9 @@ export const CardProjectBody = ({ features }: TProps): React$Node => {
                     className="card-project-body__description-item"
                     key={getRandomString()}
                 >
-                    <h4>
+                    <h6>
                         <FormattedMessage id={title} />
-                    </h4>
+                    </h6>
                     <div className="card-project-body__description-container">
                         {_description}
                     </div>
