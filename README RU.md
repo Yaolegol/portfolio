@@ -1,31 +1,16 @@
 # Старт проекта
 
-## 1. Install dependencies
-> npm i
+## 1. Установка пакетов
+> npm ci
 
-## 2. Build project
-> npm run build
-
-## 3. Start project
-> cd ./server
-
-> npm i
-
+## 2. Запуск dev сервера
 > npm start
 
-Project start on **8000** port
+Проект стартует на **8000** порту
 
-## 4. Наслаждайтесь!
+## 3. Наслаждайтесь!
 
 # О проекте
 
 ### Описание
 Landing page
-
-### Клиентская часть
-- выполнена с использованием react, less, swiper
-- адаптивная верстка
-- возможность выбора локали (en/ru)
-
-### Серверная часть
-- выполнен с использованием node, express

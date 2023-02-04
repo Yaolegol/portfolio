@@ -1,31 +1,16 @@
 # Start project
 
-## 1. Установить зависимости
-> npm i
+## 1. Install dependencies
+> npm ci
 
-## 2. Собрать проект
-> npm run build
-
-## 3. Запустить сервер
-> cd ./server
-
-> npm i
-
+## 2. Start dev server
 > npm start
 
-Проект стартует на **8000** порту
+Dev server use **8000** port
 
-## 4. Enjoy!
+## 3. Enjoy!
 
 # About project
 
 ### Description
 Landing page
-
-### Client
-- created with react, less, swiper
-- responsive layout
-- locale (en/ru)
-
-### Server
-- created with node, express
