@@ -45,7 +45,7 @@ const productionExperience = {
 const workExperienceData = {
     descriptionList: [
         {
-            description: getWorkExperience(),
+            description: '3.9+',
             descriptionIntlPostfix: "main.workExperience.measure",
             isBold: true,
             useIntl: false,

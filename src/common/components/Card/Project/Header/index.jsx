@@ -77,16 +77,23 @@ export const CardProjectHeader = ({
                 )}
             </div>
             <div className="card-project-header__git-container">
-                <a href={git} rel="nofollow noreferrer" target="_blank">
-                    <img
-                        alt="Github"
-                        className="card-project-header__git-icon"
-                        src="/icons/git/git.svg"
-                    />
-                    <div>
-                        <FormattedMessage id="projects.common.viewCode.title" />
-                    </div>
-                </a>
+                {
+                    git === 'private'
+                    ? null
+                    :
+                        (
+                            <a href={git} rel="nofollow noreferrer" target="_blank">
+                                <img
+                                    alt="Github"
+                                    className="card-project-header__git-icon"
+                                    src="/icons/git/git.svg"
+                                />
+                                <div>
+                                    <FormattedMessage id="projects.common.viewCode.title" />
+                                </div>
+                            </a>
+                        )
+                }
             </div>
             <div className="card-project-header__title-container">
                 <h2>
