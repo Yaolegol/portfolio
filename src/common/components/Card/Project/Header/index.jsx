@@ -94,7 +94,7 @@ export const CardProjectHeader = ({
                                 <FormattedMessage id="projects.common.viewCode.title" />
                             </div>
                             <div className="card-project-header__git-hint">
-                                Приватный репозиторий - ссылка по запросу
+                                <FormattedMessage id="projects.common.gitPrivate" />
                             </div>
                         </a>
                     )
