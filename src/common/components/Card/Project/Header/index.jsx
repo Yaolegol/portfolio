@@ -76,23 +76,28 @@ export const CardProjectHeader = ({
                     </span>
                 )}
             </div>
-            <div className="card-project-header__git-container">
+            <div className={git !== 'private' ? "card-project-header__git-container" : "card-project-header__git-container card-project-header__git-container_private"}>
                 {
-                    git === 'private'
-                    ? null
-                    :
-                        (
-                            <a href={git} rel="nofollow noreferrer" target="_blank">
-                                <img
-                                    alt="Github"
-                                    className="card-project-header__git-icon"
-                                    src="/icons/git/git.svg"
-                                />
-                                <div>
-                                    <FormattedMessage id="projects.common.viewCode.title" />
-                                </div>
-                            </a>
-                        )
+                    (
+                        <a
+                            className="card-project-header__git-link"
+                            href={git}
+                            rel="nofollow noreferrer"
+                            target="_blank"
+                        >
+                            <img
+                                alt="Github"
+                                className="card-project-header__git-icon"
+                                src="/icons/git/git.svg"
+                            />
+                            <div>
+                                <FormattedMessage id="projects.common.viewCode.title" />
+                            </div>
+                            <div className="card-project-header__git-hint">
+                                Приватный репозиторий - ссылка по запросу
+                            </div>
+                        </a>
+                    )
                 }
             </div>
             <div className="card-project-header__title-container">

@@ -68,8 +68,29 @@
         z-index: 1;
     }
 
+    &__git-hint {
+        color: @green;
+        display: none;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 200px;
+
+        .card-project-header__git-container_private:hover & {
+            display: block;
+        }
+    }
+
     &__git-icon {
         width: 64px;
+    }
+
+    &__git-link {
+        .card-project-header__git-container_private & {
+            pointer-events: none;
+        }
     }
 
     &__image {
