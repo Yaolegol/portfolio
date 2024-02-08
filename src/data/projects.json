@@ -45,6 +45,7 @@
         "git": "private",
         "header": {
             "description": "projects.farm.description",
+            "lastUpdate": "projects.farm.lastUpdate",
             "title": "projects.farm.title"
         },
         "image": {
@@ -115,6 +116,7 @@
         "git": "https://github.com/Yaolegol/Concrete",
         "header": {
             "description": "projects.concrete.description",
+            "lastUpdate": "projects.concrete.lastUpdate",
             "title": "projects.concrete.title"
         },
         "image": {
@@ -145,6 +147,7 @@
         "git": "https://github.com/Yaolegol/TAKEOFF",
         "header": {
             "description": "projects.takeoff.description",
+            "lastUpdate": "projects.takeoff.lastUpdate",
             "title": "projects.takeoff.title"
         },
         "image": {
@@ -173,6 +176,7 @@
         "git": "https://github.com/Yaolegol/portfolio",
         "header": {
             "description": "projects.portfolio.description",
+            "lastUpdate": "projects.portfolio.lastUpdate",
             "title": "projects.portfolio.title"
         },
         "image": {

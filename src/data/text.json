@@ -88,6 +88,7 @@
         "projects.concrete.features.server.value3": "auth with JsonWebToken",
         "projects.concrete.features.db.title": "Database management system",
         "projects.concrete.features.db.value1": "MongoDB",
+        "projects.concrete.lastUpdate": "Last update: Jan 2023",
         "projects.concrete.title": "Concrete",
         "projects.farm.description": "(bulletin board)",
         "projects.farm.features.abilities.title": "Abilities",
@@ -114,6 +115,7 @@
         "projects.farm.features.server.value8": "Sending data to Blade + c API templates for a mobile application on Flutter",
         "projects.farm.features.db.title": "Database management system",
         "projects.farm.features.db.value1": "MySQL",
+        "projects.farm.lastUpdate": "Last update: Jan 2024",
         "projects.farm.title": "101ferma.ru",
         "projects.portfolio.description": "(current project)",
         "projects.portfolio.features.client.title": "Client",
@@ -122,6 +124,7 @@
         "projects.portfolio.features.client.value3": "locale (EN/RU)",
         "projects.portfolio.features.server.title": "Server",
         "projects.portfolio.features.server.value1": "Nginx",
+        "projects.portfolio.lastUpdate": "Last update: Jan 2023",
         "projects.portfolio.title": "Portfolio",
         "projects.takeoff.description": "(landing page)",
         "projects.takeoff.features.client.title": "Client",
@@ -132,6 +135,7 @@
         "projects.takeoff.features.client.value5": "custom Webpack setup",
         "projects.takeoff.features.server.title": "Server",
         "projects.takeoff.features.server.value1": "Nginx",
+        "projects.takeoff.lastUpdate": "Last update: Jan 2023",
         "projects.takeoff.title": "Takeoff"
     },
     "ru": {
@@ -190,7 +194,6 @@
         "main.workExperience.measure": "лет",
         "projects.common.currentProject.title": "Текущий сайт",
         "projects.common.gitPrivate": "Приватный репозиторий, ссылка по запросу",
-        "projects.common.lastUpdate": "Последнее обновение: янв 2024",
         "projects.common.openProject.title": "Смотреть проект",
         "projects.common.viewCode.title": "Посмотреть код",
         "projects.concrete.additionalInfo.value1": "Email и пароль для входа как админ",
@@ -223,6 +226,7 @@
         "projects.concrete.features.server.value3": "авторизация через JsonWebToken",
         "projects.concrete.features.db.title": "СУБД",
         "projects.concrete.features.db.value1": "MongoDB",
+        "projects.concrete.lastUpdate": "Последнее обновение: янв 2023",
         "projects.concrete.title": "Concrete",
         "projects.farm.description": "(доска объявлений)",
         "projects.farm.features.abilities.title": "Возможности",
@@ -249,6 +253,7 @@
         "projects.farm.features.server.value8": "Отдача данных в шаблоны Blade + c API для мобильного приложения на Flutter",
         "projects.farm.features.db.title": "СУБД",
         "projects.farm.features.db.value1": "MySQL",
+        "projects.farm.lastUpdate": "Последнее обновение: янв 2024",
         "projects.farm.title": "101ferma.ru",
         "projects.portfolio.description": "(текущий проект)",
         "projects.portfolio.features.client.title": "Client",
@@ -257,6 +262,7 @@
         "projects.portfolio.features.client.value3": "возможность выбора локали (EN/RU)",
         "projects.portfolio.features.server.title": "Server",
         "projects.portfolio.features.server.value1": "Nginx",
+        "projects.portfolio.lastUpdate": "Последнее обновение: янв 2023",
         "projects.portfolio.title": "Portfolio",
         "projects.takeoff.description": "(landing page)",
         "projects.takeoff.features.client.title": "Client",
@@ -267,6 +273,7 @@
         "projects.takeoff.features.client.value5": "кастомная сборка Webpack",
         "projects.takeoff.features.server.title": "Server",
         "projects.takeoff.features.server.value1": "Nginx",
+        "projects.takeoff.lastUpdate": "Последнее обновение: янв 2023",
         "projects.takeoff.title": "Takeoff"
     }
 }

@@ -11,6 +11,7 @@ type TProps = {
     git: string,
     imgAlt: string,
     imgSrc: string,
+    lastUpdate: string,
     link: string,
     title: string,
 };
@@ -22,6 +23,7 @@ export const CardProject = ({
     git,
     imgAlt,
     imgSrc,
+    lastUpdate,
     link,
     title,
 }: TProps): React$Node => {
@@ -33,6 +35,7 @@ export const CardProject = ({
                 git={git}
                 imgAlt={imgAlt}
                 imgSrc={imgSrc}
+                lastUpdate={lastUpdate}
                 link={link}
                 title={title}
             />

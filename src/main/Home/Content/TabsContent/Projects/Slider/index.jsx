@@ -17,7 +17,7 @@ export const Slider = (): React$Node => {
     const content = useMemo(() => {
         return projectsList.map(
             ({ additionalInfo, features, git, header, image, link }) => {
-                const { description, title } = header;
+                const { description, lastUpdate, title } = header;
                 const { alt, src } = image;
                 return (
                     <SwiperSlide key={git}>
@@ -30,6 +30,7 @@ export const Slider = (): React$Node => {
                                     git={git}
                                     imgAlt={alt}
                                     imgSrc={src}
+                                    lastUpdate={lastUpdate}
                                     link={link}
                                     title={title}
                                 />

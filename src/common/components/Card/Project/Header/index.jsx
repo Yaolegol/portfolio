@@ -12,6 +12,7 @@ type TProps = {
     git: string,
     imgAlt: string,
     imgSrc: string,
+    lastUpdate: string,
     link: string,
     title: string,
 };
@@ -22,6 +23,7 @@ export const CardProjectHeader = ({
     git,
     imgAlt,
     imgSrc,
+    lastUpdate,
     link,
     title,
 }: TProps): React$Node => {
@@ -57,7 +59,7 @@ export const CardProjectHeader = ({
             </div>
             <div className="card-project-header__badge-container">
                 <Badge>
-                    <FormattedMessage id="projects.common.lastUpdate" />
+                    <FormattedMessage id={lastUpdate} />
                 </Badge>
             </div>
             <div className="card-project-header__open-project-link-container">
