@@ -36,6 +36,19 @@ export const SocialLinks = (): React$Node => {
                         />
                     </a>
                 </div>
+                <div className="home-page-header-social-links__socials-item">
+                    <a
+                        href="https://t.me/OlegOleinik"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        <img
+                            alt="Telegram"
+                            className="home-page-header-social-links__socials-icon home-page-header-social-links__socials-icon_vk"
+                            src="/icons/social/telegram.svg"
+                        />
+                    </a>
+                </div>
             </div>
         );
     }
