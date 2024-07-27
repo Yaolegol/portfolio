@@ -78,28 +78,26 @@ export const CardProjectHeader = ({
                     </span>
                 )}
             </div>
-            <div className={git !== 'private' ? "card-project-header__git-container" : "card-project-header__git-container card-project-header__git-container_private"}>
+            <div className="card-project-header__git-container">
                 {
-                    (
-                        <a
-                            className="card-project-header__git-link"
-                            href={git}
-                            rel="nofollow noreferrer"
-                            target="_blank"
-                        >
-                            <img
-                                alt="Github"
-                                className="card-project-header__git-icon"
-                                src="/icons/git/git.svg"
-                            />
-                            <div>
-                                <FormattedMessage id="projects.common.viewCode.title" />
-                            </div>
-                            <div className="card-project-header__git-hint">
-                                <FormattedMessage id="projects.common.gitPrivate" />
-                            </div>
-                        </a>
-                    )
+                    <a
+                        className="card-project-header__git-link"
+                        href={git}
+                        rel="nofollow noreferrer"
+                        target="_blank"
+                    >
+                        <img
+                            alt="Github"
+                            className="card-project-header__git-icon"
+                            src="/icons/git/git.svg"
+                        />
+                        <div>
+                            <FormattedMessage id="projects.common.viewCode.title" />
+                        </div>
+                        <div className="card-project-header__git-hint">
+                            <FormattedMessage id="projects.common.gitPrivate" />
+                        </div>
+                    </a>
                 }
             </div>
             <div className="card-project-header__title-container">
