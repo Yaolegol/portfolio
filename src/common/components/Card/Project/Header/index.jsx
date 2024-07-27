@@ -79,26 +79,24 @@ export const CardProjectHeader = ({
                 )}
             </div>
             <div className="card-project-header__git-container">
-                {
-                    <a
-                        className="card-project-header__git-link"
-                        href={git}
-                        rel="nofollow noreferrer"
-                        target="_blank"
-                    >
-                        <img
-                            alt="Github"
-                            className="card-project-header__git-icon"
-                            src="/icons/git/git.svg"
-                        />
-                        <div>
-                            <FormattedMessage id="projects.common.viewCode.title" />
-                        </div>
-                        <div className="card-project-header__git-hint">
-                            <FormattedMessage id="projects.common.gitPrivate" />
-                        </div>
-                    </a>
-                }
+                <a
+                    className="card-project-header__git-link"
+                    href={git}
+                    rel="nofollow noreferrer"
+                    target="_blank"
+                >
+                    <img
+                        alt="Github"
+                        className="card-project-header__git-icon"
+                        src="/icons/git/git.svg"
+                    />
+                    <div>
+                        <FormattedMessage id="projects.common.viewCode.title" />
+                    </div>
+                    <div className="card-project-header__git-hint">
+                        <FormattedMessage id="projects.common.gitPrivate" />
+                    </div>
+                </a>
             </div>
             <div className="card-project-header__title-container">
                 <h2>
@@ -107,11 +105,11 @@ export const CardProjectHeader = ({
                 <div className="card-project-header__title-description">
                     <FormattedMessage id={description} />
                 </div>
-                {_additionalInfo ? (
+                {_additionalInfo && (
                     <div className="card-project-header__additional-info-container">
                         {_additionalInfo}
                     </div>
-                ) : null}
+                )}
             </div>
         </div>
     );
