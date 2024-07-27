@@ -1,5 +1,5 @@
 // @flow
-import text from "data/text.json";
+import text from "intl/text.json";
 import { selectCurrentLocale } from "modules/Locale/selectors";
 import React from "react";
 import { IntlProvider } from "react-intl";
