@@ -1,5 +1,4 @@
 // @flow
-import { getWorkExperience } from "common/helpers/personalData";
 import { Contacts } from "main/Home/Header/Contacts";
 import { SocialLinks } from "main/Home/Header/SocialLinks";
 import { LangSelect } from "modules/Locale/components/LangSelect";
